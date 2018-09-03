@@ -53,5 +53,11 @@ $(document).ready(function() {
             }
           ]
       });
-	
+  
+      
+
+      $('.filter-categories').click(function() {
+        $(this).toggleClass('open');
+        $(this).find('.filter-categories__items').slideToggle(500);
+      });
 });

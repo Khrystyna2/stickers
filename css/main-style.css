@@ -237,17 +237,17 @@ a:hover{
 .why-we__title::after{
     right: -35px;
 }
-.category-dood__img{
+.category-good__img{
     width: 100%;
     height: auto;
     position: relative;
     margin-bottom: 30px;
     display: block;
 }
-.category-dood__img img{
+.category-good__img img{
     width: 100%;
 }
-.category-dood__img .category-good__desc{
+.category-good__img .category-good__desc{
     position: absolute;
     bottom: 18px;
     left: -10px;
@@ -258,7 +258,7 @@ a:hover{
     padding: 8px 10px;
     font-size: 14px;
 }
-.category-dood__img .category-good__desc p:first-child{
+.category-good__img .category-good__desc p:first-child{
     font-weight: 500;
 }
 
@@ -453,7 +453,131 @@ a:hover{
     height: 18px;
     margin-right: 18px;
 }
+.wrapper-filter .filter-categories{
+    padding-left: 22px;
+    font-size: 14px;
+}
+.link-page{
+    font-size: 14px;
+    font-weight: 600;
+    padding-top: 30px;
+}
 
+.link-page a{
+    color: #1c1b1b;
+}
+.link-page span{
+    color: #606163;
+}
+
+/*catalog page*/
+.wrapper-filter{
+    margin-top: 28px;
+    border-bottom: 1px solid #e0e3e8;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+.wrapper-filter:last-of-type{
+    border: none;
+}
+.wrapper-filter .wrapper-filter__title{
+    font-size: 17px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.wrapper-filter .filter-categories{
+    padding-left: 22px;
+    font-size: 14px;
+}
+.wrapper-filter .filter-categories span{
+    padding: 10px 0;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+.wrapper-filter .filter-categories span::before{
+    content: '+';
+    position: absolute;
+    left: -20px;
+    top: 9px;
+}
+.wrapper-filter .filter-categories.open span::before{
+    content: '-';
+}
+.wrapper-filter .filter-categories .filter-categories__items{
+    display: none;
+}
+.wrapper-filter .filter-categories .filter-categories__items li a{
+    color: #1c1b1b;
+    padding: 6px 0;
+    display: block;
+}
+.wrapper-filter .filter-categories .filter-categories__items li a:hover{
+    color: #fc4d4c;
+    text-decoration: none;
+}
+
+.catalog-categories{
+    padding-top: 70px;
+    border-bottom: 1px solid #e0e3e8;
+    margin-bottom: 30px;
+}
+.catalog-categories .category-good__img .category-good__desc{
+    height: auto;
+    width: 75%;
+    font-weight: 500;
+}
+.group-select{
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    background: #e0e3e8;
+    margin-bottom: 30px;
+}
+.group-select .style-select{
+    height: 35px;
+    width: 26%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #d4d7dc;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    font-size: 12px;
+}
+.group-select .style-select::after{
+    content: '\f107';
+    font-family: 'FontAwesome';
+    color: #606163;
+    position: absolute;
+    top: 7px;
+    right: 19px;
+}
+.group-select .style-select select{
+    width: 100%;
+    border: none;
+    color: #606163;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 6px 0;
+    padding-left: 20px;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+}
+.group-select .style-select:last-of-type{
+    width: 22%;
+}
 
 @media only screen and (max-width: 1200px) {
     .logo img {
@@ -465,7 +589,7 @@ a:hover{
     .top-slider-img .top-slider__desc .top-slider__btn {
         margin-top: 24px;
     }
-    .category-dood__img .category-good__desc {
+    .category-good__img .category-good__desc {
         width: 70%;
     }
     .slick-next {
