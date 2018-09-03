@@ -43,9 +43,10 @@ $(document).ready(function() {
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 768,
               settings: {
-                
+                slidesToShow: 2,
+                slidesToScroll: 1
               }
             }
           ]
@@ -65,9 +66,10 @@ $(document).ready(function() {
               }
             },
             {
-              breakpoint: 480,
+              breakpoint: 768,
               settings: {
-                
+                slidesToShow: 2,
+                slidesToScroll: 1
               }
             }
           ]

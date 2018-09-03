@@ -743,9 +743,6 @@ a:hover{
     }
 }
 @media only screen and (max-width: 992px) {
-    body{
-        font-size: 12px;
-    }
     .container{
         max-width: 100%;
     }
@@ -818,3 +815,73 @@ a:hover{
         font-size: 12px;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .top-menu {
+        font-size: 11px;
+    }
+    .title-sectio h3 {
+        font-size: 14px;
+    }
+    .title-sectio {
+        margin: 15px 0;
+    }
+    .news, .why-we {
+        padding: 15px 0;
+    }
+    .slick-prev, .slick-next {
+        width: 30px;
+        height: 70px;
+    }
+    .slick-prev:before,
+    .slick-next:before{
+        top: 25px;
+    }
+    .slick-prev {
+        left: -4px;
+    }
+    .slick-next {
+        right: -4px;
+    }
+    
+}
+@media only screen and (max-width: 720px) and (min-width: 567px){
+    .header::after {
+        width: 0;
+    }
+    .top-menu {
+        font-size: 9px;
+    }
+    .top-menu li a {
+        padding: 15px 5px;
+    }
+    .wrapper-snb-menu__items_title{
+        font-size: 12px;
+    }
+    .category-good__img .category-good__desc {
+        height: 35px;
+        font-size: 10px;
+        bottom: 10px;
+        padding: 3px 5px;
+        width: 85%;
+    }
+    .why-we__cards {
+        width: 25%;
+        font-size: 14px;
+        margin: 0 5px;
+        font-size: 9px;
+        padding: 20px 10px;
+    }
+    .footer-menu h4, .footer-contacts h4 {
+        font-size: 11px;
+    }
+    .footer-link, .footer-menu ul, .footer-contacts ul, .footer-confidentiality{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .header::before{
+        width: 0;
+    }
+}
+
