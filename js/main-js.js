@@ -2,14 +2,14 @@ $(document).ready(function() {
 
   // if ($(window).width() > 1024) {
   //   $('.menu-dropdown').hover(function () {
-  //     $(this).find('.wrapper-sub-menu').fadeIn(200);
+  //     $(this).find('.wrapper-sub-menu').stop(true, true).fadeIn(200);
   //   }, function () {
   //     $('.wrapper-sub-menu').fadeOut(200);
   //   });
   // }
   // if ($(window).width() <= 1024) {
-  //   $('.top-menu').click(function () {
-  //     $('.wrapper-sub-menu').slideToggle(500);
+  //   $('.menu-dropdown').click(function () {
+  //     $(this).find('.wrapper-sub-menu').slideToggle(400);
   //   });
   // }
 
@@ -120,4 +120,13 @@ $(document).ready(function() {
         $('.menu').slideToggle(600);
 
       });
+
+
+      $('.wrap-card-good').hover(function (event) {
+        $(this).find('.cards-good-hide-block').stop(true, true).slideDown();
+      }, function () {
+        $(this).find('.cards-good-hide-block').slideUp();
+
+      });
+
 });
