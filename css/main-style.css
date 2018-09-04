@@ -44,6 +44,14 @@ a:hover{
     font-weight: 500;
     cursor: pointer;
 }
+.btn-border-red{
+    border: 1px solid #fc4d4c;
+    background: #fff;
+    color: #1c1b1b;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
 
 /*header*/
 .header{
@@ -126,6 +134,7 @@ a:hover{
     align-items: center;
     justify-content: center;
     width: 50%;
+    cursor: pointer;
 }
 .login img,
 .cart img{
@@ -260,6 +269,9 @@ a:hover{
 }
 
 /*modal windows*/
+.modal-dialog {
+    max-width: 550px;
+}
 .modal-content{
     padding: 40px 55px;
     border-radius: 0;
@@ -267,7 +279,6 @@ a:hover{
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     -o-border-radius: 0;
-    width: 550px;
 }
 .modal-content .modal__title{
     width: 75%;
@@ -296,7 +307,8 @@ a:hover{
     margin-bottom: 22px;
 }
 .modal-content .modal-body input[type="email"]::placeholder,
-.modal-content .modal-body input[type="password"]::placeholder{
+.modal-content .modal-body input[type="password"]::placeholder,
+.modal-content .modal-body input[type="text"]::placeholder{
     font-size: 12px;
     color: #606163;
     font-family: 'Univia Pro', sans-serif;
@@ -339,7 +351,120 @@ a:hover{
 }
 /*the end modal window*/
 
+/*modal window cart*/
+.modal-cart .modal-dialog{
+    max-width: 770px;
+}
+.modal-cart .modal-content{
+    width: 100%;
+    /* height: 85vh;
+    overflow-y: scroll; */
+}
+.modal-cart .modal-content .modal__title {
+    width: 40%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.modal-cart .modal-content .wrap-cart{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e0e3e8;
+    margin-top: 15px;
+}
+.modal-cart .modal-content .wrap-cart:last-of-type{
+    border: none;
+}
+.modal-cart .modal-content .wrap-cart .wrap-cart__img{
+    width: 25%;
+}
+.modal-cart .modal-content .wrap-cart .wrap-cart__img img{
+    width: 100%;
+    margin: 0;
+}
+.modal-cart .modal-content .wrap-cart .wrap-cart__desc{
+    width: 35%;
+    margin-left: 15px;
+}
+.modal-cart .modal-content .wrap-cart .wrap-cart__desc h6{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+.modal-cart .modal-content .wrap-cart .wrap-cart__desc span{
+    display: block;
+    background: #e0e3e8;
+    width: 52%;
+    padding: 6px;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.modal-cart .modal-content .wrap-cart .wrap-cart-price{
+    width: 20%;
+    text-align: left;
+    margin-left: 12px;
+}
+.modal-cart .modal-content .wrap-cart .wrap-cart-price p{
+    text-align: left;
+    width: 100%;
+    padding-bottom: 10px;
+}
+.modal-cart .modal-content .wrap-cart .wrap-cart-price p span{
+    font-size: 20px;
+    font-weight: 700;
+    color: #fc4d4c;
+}
+.modal-cart .modal-content .wrap-cart .wrap-cart-price .style-select{
+    width: 55%;
+    margin-bottom: 12px;
+}
+.modal-cart .modal-content .wrap-cart .delet-cart{
+    margin-bottom: 25px;
+    display: block;
+    position: relative;
+}
+.modal-cart .modal-content .wrap-cart .delet-cart::before{
+    content: '\f00d ';
+    color: #fc4d4c;
+    font-family: 'FontAwesome';
+    position: absolute;
+    top: -9px;
+    left: -11px;
+    font-weight: 300;
+    font-size: 12px;
+}
+.modal-cart .modal-content .wrap-cart-total-price{
+    background: #fafafa;
+    width: 100%;
+    padding: 30px 65px;
+}
+.modal-cart .modal-content .wrap-cart-total-price p{
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    text-align: right;
+}
+.modal-cart .modal-content .wrap-cart-total-price p span{
+    font-size: 25px;
+    font-weight: 700;
+    color: #fc4d4c;
+}
+.modal-cart .modal-content .modal-footer{
+    justify-content: flex-end;
+}
+.modal-cart .modal-content .modal-footer .btn-modal-window{
+    width: 26%;
+    margin: 0 12px;
+    margin-top: 20px;
+}
  /*sectio category-doods*/
+.slider-goods-mob{
+    display: none;
+}
 .category-goods__title,
 .why-we__title{
     font-size: 24px;
@@ -665,7 +790,7 @@ a:hover{
     background: #e0e3e8;
     margin-bottom: 30px;
 }
-.group-select .style-select{
+.style-select{
     height: 35px;
     width: 26%;
     border-radius: 5px;
@@ -681,7 +806,7 @@ a:hover{
     cursor: pointer;
     font-size: 12px;
 }
-.group-select .style-select::after{
+.style-select::after{
     content: '\f107';
     font-family: 'FontAwesome';
     color: #606163;
@@ -689,7 +814,7 @@ a:hover{
     top: 7px;
     right: 19px;
 }
-.group-select .style-select select{
+.style-select select{
     width: 100%;
     border: none;
     color: #606163;
@@ -843,6 +968,9 @@ a:hover{
     .slick-next {
         right: -4px;
     }
+    .modal-cart .modal-dialog {
+        max-width: 700px;
+    }
     
 }
 @media only screen and (max-width: 720px) and (min-width: 567px){
@@ -880,8 +1008,148 @@ a:hover{
     }
 }
 @media only screen and (max-width: 576px) {
-    .header::before{
+    .header::after, .header::before{
         width: 0;
+    }
+    .login a, .cart p{
+        display: none;
+    }
+    /*button menu*/
+    .menu-btn{
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        top: -40px;
+        cursor: pointer;
+    }
+    .menu-btn span,
+    .menu-btn span::before,
+    .menu-btn span::after{
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -1.5px;
+        left: 50%;
+        margin-left: -13px;
+        width: 26px;
+        height: 3px;
+        background-color: #fc4d4c;
+    }
+    .menu-btn span::before,
+    .menu-btn span::after{
+        content: '';
+        display: block;
+        transition: 0.3s;
+    }
+    .menu-btn span::before{
+        transform: translateY(-6px);
+        -webkit-transform: translateY(-6px);
+        -moz-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+        -o-transform: translateY(-6px);
+}
+    .menu-btn span::after{
+        transform: translateY(6px);
+        -webkit-transform: translateY(6px);
+        -moz-transform: translateY(6px);
+        -ms-transform: translateY(6px);
+        -o-transform: translateY(6px);
+}
+    .menu-btn_active span{
+        height: 0;
+    }
+    .menu-btn_active span:before {
+        transform: rotate(-42deg);
+    }
+    .menu-btn_active span:after {
+        transform: rotate(42deg);
+    }
+    /*button menu*/
+    .menu{
+        display: none;
+    }
+    .top-menu {
+        font-size: 13px;
+        flex-flow: column;
+    }
+    .top-menu li a {
+        padding: 12px 11px;
+    }
+    .wrapper-sub-menu{
+        display: none;
+    }
+    .top-menu .menu-dropdown a::after {
+        content: '';
+    }
+    .top-slider-img .top-slider__desc h1 {
+        font-size: 19px;
+    }
+    .top-slider-img .top-slider__desc h2 {
+        font-size: 14px;
+    }
+    .slick-dots {
+        padding-left: 10%;
+    }
+    .category-goods__title, .why-we__title {
+        font-size: 18px;
+        width: 195px;
+    }
+    .title-sectio .link{
+        display: none;
+    }
+    .why-we .why-we__title {
+        width: 207px;
+    }
+    .wrapper-why-we{
+        flex-wrap: wrap;
+    }
+    .why-we__cards {
+        width: 48%;
+        padding: 30px 10px;
+        font-size: 10px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+        margin-left: 0;
+    }
+    .why-we__cards:nth-of-type(2n) {
+        margin-right: 0;
+    }
+    .footer-link,
+    .footer-menu{
+        margin-bottom: 15px;
+    }
+    .footer-confidentiality {
+        align-items: flex-start;
+        flex-flow: column;
+        margin-top: 25px;
+    }
+    .footer-confidentiality .footer-icons {
+        order: 1;
+    }
+    .footer-confidentiality span {
+        order: 2;
+        margin-top: 8px;
+    }
+
+    .category-goods{
+        margin-bottom: 20px;
+    }
+    .slider-goods-mob{
+        display: block;
+    }
+    .slider-goods-mob a{
+        margin: 0 14px;
     }
 }
 
+
+@media only screen and (max-width: 530px) {
+    .why-we__cards {
+        width: 47.5%;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .why-we__cards {
+        width: 46.5%;
+    }
+}

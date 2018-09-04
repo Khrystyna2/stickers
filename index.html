@@ -30,7 +30,7 @@
                         <p><span>stickers</span><br>printcolor</p>
                     </a>
                 </div>
-                <div class="col-12 col-sm-5 col-lg-5">
+                <div class="col-10 ml-auto col-sm-5 col-lg-5 order-2 order-sm-1">
                     <form>
                         <div class="input-groups">
                             <input type="search" placeholder="Поиск по каталогу ..." class="search-input-top">
@@ -38,14 +38,15 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-6 col-sm-4 col-lg-5">
+                <div class="col-6 col-sm-4 col-lg-5 order-1">
                     <div class="top-wrap d-flex">
-                        <div class="login">
+                        <div class="login" data-toggle="modal" data-target="#modalWindowExit">
                             <img src="icons/user.svg" alt="user">
                             <div class="login__title">
                                 <p>Личный кабинет</p>
-                                <a href="#" data-toggle="modal" data-target="#modalWindowExit">Войти</a>
+                                <a href="#">Войти</a>
                             </div>
+                        </div>
                             <!-- modal window exit -->
                             <div class="modal fade" id="modalWindowExit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
@@ -56,9 +57,11 @@
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                         <div class="modal-body">
-                                            <input type="email" placeholder="Эл. адрес *">
-                                            <input type="password" placeholder="Пароль *">
-                                            <input type="password" placeholder="Повторите пароль *">
+                                            <form>
+                                                <input type="email" placeholder="Эл. адрес *">
+                                                <input type="password" placeholder="Пароль *">
+                                                <input type="password" placeholder="Повторите пароль *">
+                                            </form>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn-red btn-modal-window">Войти</button>
@@ -77,6 +80,7 @@
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                             <div class="modal-body">
+                                                <form>
                                                 <input type="email" placeholder="Эл. адрес *">
                                                 <input type="text">
                                                 <input type="text">
@@ -85,6 +89,7 @@
                                                 <input type="password" placeholder="Пароль *">
                                                 <input type="password" placeholder="Повторите пароль *">
                                                 <img src="img/robot.jpg" alt="">
+                                                </form>
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn-red btn-modal-window">Войти</button>
@@ -93,21 +98,135 @@
                                         </div>
                                     </div>
                                 </div> -->
-                        </div>
+                            <!-- modal window call back -->
+                            <div class="modal fade" id="modalWindowCallBack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <h2 class="category-goods__title modal__title">ОБРАТНАЯ СВЯЗЬ</h2>
+                                            <p>Заполните форму и наш менеджер свяжется с вами в течении рабочего дня</p>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <input type="text" placeholder="Имя *">
+                                                    <input type="text" placeholder="Номер телефона *">
+                                                    <input type="email" placeholder="Эл. адрес">
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn-red btn-modal-window">Отправить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                 
-                        <div class="cart">
+                        <div class="cart"  data-toggle="modal" data-target="#modalWindowCart">
                             <img src="icons/basket.svg" alt="cart">
                             <div class="cart__title">
                                 <p>Товара на сумму:</p>
                                 <p><span>3 200</span> грн</p>
                             </div>
                         </div>
+                         <!-- modal window cart -->
+                         <div class="modal fade modal-cart" id="modalWindowCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <h2 class="category-goods__title modal__title">ТОВАРЫ В КОРЗИНЕ</h2>
+                                        <p>Авторизуйтесь , что бы сохранить товары в корзине</p>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                        <div class="modal-body">
+                                            <div class="wrap-cart">
+                                                <div class="wrap-cart__img">
+                                                    <img src="img/img-cart.jpg" alt="">
+                                                </div>
+                                                <div class="wrap-cart__desc">
+                                                    <h6>Модульная картина портрет женщины</h6>
+                                                    <span>Есть в наличии</span>
+                                                </div>
+                                                <div class="wrap-cart-price">
+                                                    <p><span>13 200</span> грн</p>
+                                                    <div class="style-select">
+                                                        <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                    </select>
+                                                    </div>
+                                                </div>
+                                                <span class="delet-cart">Удалить</span>
+                                            </div>
+                                            <div class="wrap-cart">
+                                                    <div class="wrap-cart__img">
+                                                        <img src="img/img-cart.jpg" alt="">
+                                                    </div>
+                                                    <div class="wrap-cart__desc">
+                                                        <h6>Модульная картина портрет женщины</h6>
+                                                        <span>Есть в наличии</span>
+                                                    </div>
+                                                    <div class="wrap-cart-price">
+                                                        <p><span>13 200</span> грн</p>
+                                                        <div class="style-select">
+                                                            <select name="" id="">
+                                                            <option value="">1</option>
+                                                            <option value="">2</option>
+                                                            <option value="">3</option>
+                                                            <option value="">4</option>
+                                                            <option value="">5</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                    <span class="delet-cart">Удалить</span>
+                                            </div>
+                                            <div class="wrap-cart">
+                                                    <div class="wrap-cart__img">
+                                                        <img src="img/img-cart.jpg" alt="">
+                                                    </div>
+                                                    <div class="wrap-cart__desc">
+                                                        <h6>Модульная картина портрет женщины</h6>
+                                                        <span>Есть в наличии</span>
+                                                    </div>
+                                                    <div class="wrap-cart-price">
+                                                        <p><span>13 200</span> грн</p>
+                                                        <div class="style-select">
+                                                            <select name="" id="">
+                                                            <option value="">1</option>
+                                                            <option value="">2</option>
+                                                            <option value="">3</option>
+                                                            <option value="">4</option>
+                                                            <option value="">5</option>
+                                                        </select>
+                                                        </div>
+                                                    </div>
+                                                    <span class="delet-cart">Удалить</span>
+                                            </div>
+                                            <div class="wrap-cart-total-price">
+                                                    <div class="total-price">
+                                                        <p>ИТОГО:</p>
+                                                        <p><span>13 200</span> грн</p>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn-border-red btn-modal-window">Продолжить покупки</button>
+                                            <button type="button" class="btn-red btn-modal-window">Оформить заказ</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <nav>
+                        <div class="menu-btn">
+                                <span></span>
+                            </div>
+                    <nav class="menu">
                         <ul class="top-menu d-flex">
                             <li><a href="#">ГЛАВНАЯ</a></li>
                             <li><a href="#">О НАС</a></li>
@@ -225,53 +344,99 @@
                     <div class="col-12">
                         <h2 class="category-goods__title">КАТЕГОРИИ ТОВАРОВ</h2>
                     </div>
-                    <div class="col-12 col-md-4">
-                            <a href="#" class="category-good__img">
-                                <img src="img/goods/good-1.jpg" alt="">
-                             <div class="category-good__desc">
+                    <div class="col-12 col-sm-4 d-none d-sm-block">
+                        <a href="#" class="category-good__img">
+                            <img src="img/goods/good-1.jpg" alt="">
+                            <div class="category-good__desc">
                                 <p>Наклейки интерьерные</p>
                                 <p>Более 500 видов</p>
                             </div>
-                            </a>
-                            <a href="#" class="category-good__img">
-                                    <img src="img/goods/good-4.jpg" alt="">
-                                 <div class="category-good__desc">
-                                    <p>Витражные плёнки</p>
-                                    <p>Более 500 видов</p>
-                                </div>
-                                </a>
+                        </a>
+                        <a href="#" class="category-good__img">
+                            <img src="img/goods/good-4.jpg" alt="">
+                            <div class="category-good__desc">
+                                <p>Витражные плёнки</p>
+                                <p>Более 500 видов</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-12 col-md-4">
-                            <a href="#" class="category-good__img">
-                                <img src="img/goods/good-2.jpg" alt="">
-                             <div class="category-good__desc">
+                    <div class="col-12 col-sm-4 d-none d-sm-block">
+                        <a href="#" class="category-good__img">
+                            <img src="img/goods/good-2.jpg" alt="">
+                            <div class="category-good__desc">
                                 <p>Модульные картины</p>
                                 <p>От 3 500 грн</p>
                             </div>
-                            </a>
-                            <a href="#" class="category-good__img">
-                                    <img src="img/goods/good-5.jpg" alt="">
-                                 <div class="category-good__desc">
-                                    <p>Картины на стекле</p>
-                                    <p>От 3 500 грн</p>
-                                </div>
-                                </a>
+                        </a>
+                        <a href="#" class="category-good__img">
+                            <img src="img/goods/good-5.jpg" alt="">
+                            <div class="category-good__desc">
+                                <p>Картины на стекле</p>
+                                <p>От 3 500 грн</p>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col-12 col-md-4">
-                            <a href="#" class="category-good__img">
-                                <img src="img/goods/good-3.jpg" alt="">
-                             <div class="category-good__desc">
+                    <div class="col-12 col-sm-4 d-none d-sm-block">
+                        <a href="#" class="category-good__img">
+                            <img src="img/goods/good-3.jpg" alt="">
+                            <div class="category-good__desc">
                                 <p>Картины на стекле</p>
                                 <p>Более 1 500 видов</p>
                             </div>
+                        </a>
+                        <a href="#" class="category-good__img">
+                            <img src="img/goods/good-6.jpg" alt="">
+                            <div class="category-good__desc">
+                                <p>Фотообои</p>
+                                <p>Более 1 500 видов</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <div class="slider-goods-mob">
+                            <a href="#" class="category-good__img">
+                                <img src="img/goods/good-1.jpg" alt="">
+                                <div class="category-good__desc">
+                                    <p>Наклейки интерьерные</p>
+                                    <p>Более 500 видов</p>
+                                </div>
                             </a>
                             <a href="#" class="category-good__img">
-                                    <img src="img/goods/good-6.jpg" alt="">
-                                 <div class="category-good__desc">
+                                <img src="img/goods/good-4.jpg" alt="">
+                                <div class="category-good__desc">
+                                    <p>Витражные плёнки</p>
+                                    <p>Более 500 видов</p>
+                                </div>
+                            </a>
+                            <a href="#" class="category-good__img">
+                                <img src="img/goods/good-2.jpg" alt="">
+                                <div class="category-good__desc">
+                                    <p>Модульные картины</p>
+                                    <p>От 3 500 грн</p>
+                                </div>
+                            </a>
+                            <a href="#" class="category-good__img">
+                                <img src="img/goods/good-5.jpg" alt="">
+                                <div class="category-good__desc">
+                                    <p>Картины на стекле</p>
+                                    <p>От 3 500 грн</p>
+                                </div>
+                            </a>
+                            <a href="#" class="category-good__img">
+                                <img src="img/goods/good-3.jpg" alt="">
+                                <div class="category-good__desc">
+                                    <p>Картины на стекле</p>
+                                    <p>Более 1 500 видов</p>
+                                </div>
+                            </a>
+                            <a href="#" class="category-good__img">
+                                <img src="img/goods/good-6.jpg" alt="">
+                                <div class="category-good__desc">
                                     <p>Фотообои</p>
                                     <p>Более 1 500 видов</p>
                                 </div>
-                                </a>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -282,7 +447,7 @@
                     <div class="col-12">
                         <div class="title-sectio">
                             <h3>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h3>
-                            <a href="#">Читать все отзывы</a>
+                            <a href="#" class="link">Читать все отзывы</a>
                         </div>
                     </div>
                     <div class="col-12">
@@ -412,7 +577,7 @@
                     <div class="col-12">
                         <div class="title-sectio">
                             <h3>НОВОСТИ В ИНСТАГРАМ</h3>
-                            <a href="#">Читать все новости</a>
+                            <a href="#" class="link">Читать все новости</a>
                         </div>
                     </div>
                     <div class="col-12">
@@ -457,17 +622,17 @@
                     <div class="col-12">
                         <div class="title-sectio">
                             <h3>НАШИ ВИДЕО</h3>
-                            <a href="#">Смотреть все видео</a>
+                            <a href="#" class="link">Смотреть все видео</a>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col col-md-6 col-lg-4">
+                    <div class="col-12 col-md-6 col-lg-4">
                         <video width="100%" height="200px" controls>
                             <source src="video/Nature Beautiful short video 720p HD.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div class="col col-md-6 col-lg-4">
+                    <div class="col d-none d-sm-block col-md-6 col-lg-4">
                         <video width="100%" height="200px" controls>
                             <source src="video/Nature Beautiful short video 720p HD.mp4" type="video/mp4">
                         </video>
