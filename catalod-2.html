@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stickers</title>
+    <link rel="mask-icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="Font/stylesheetfonts.css">
+    <!-- style slick -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+    <!-- style bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main-style.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-3 col-lg-2">
+                    <a href="#" class="logo">
+                        <img src="img/Logo.png" alt="">
+                        <p><span>stickers</span><br>printcolor</p>
+                    </a>
+                </div>
+                <div class="col-10 ml-auto col-sm-5 col-lg-5 order-2 order-sm-1">
+                    <form>
+                        <div class="input-groups">
+                            <input type="search" placeholder="Поиск по каталогу ..." class="search-input-top">
+                            <button type="submit" class="btn-search-icon"> <img src="icons/search.svg" alt="search"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-5 order-1">
+                    <div class="top-wrap d-flex">
+                        <div class="login" data-toggle="modal" data-target="#modalWindowExit">
+                            <img src="icons/user.svg" alt="user">
+                            <div class="login__title">
+                                <p>Личный кабинет</p>
+                                <a href="#">Войти</a>
+                            </div>
+                        </div>
+                        <!-- modal window exit -->
+                        <div class="modal fade" id="modalWindowExit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <h2 class="category-goods__title modal__title">ВХОД В ЛИЧНЫЙ КАБИНЕТ</h2>
+                                    <p>Что бы войти в личный кабинет, пожалуйста, введите свои данные</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <div class="modal-body">
+                                        <form>
+                                            <input type="email" placeholder="Эл. адрес *">
+                                            <input type="password" placeholder="Пароль *">
+                                            <input type="password" placeholder="Повторите пароль *">
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-red btn-modal-window">Войти</button>
+                                        <p>Нету аккаунта? <a href="#">Создать</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- modal window register -->
+                        <!-- <div class="modal fade" id="modalWindowRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog" role="document">
+                                                <div class="modal-content">
+                                                    <h2 class="category-goods__title modal__title">СОЗДАНИЕ АККАУНТА</h2>
+                                                    <p>Заполните форму, что бы создать аккаунт</p>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                        <input type="email" placeholder="Эл. адрес *">
+                                                        <input type="text">
+                                                        <input type="text">
+                                                        <input type="text">
+                                                        <input type="text">
+                                                        <input type="password" placeholder="Пароль *">
+                                                        <input type="password" placeholder="Повторите пароль *">
+                                                        <img src="img/robot.jpg" alt="">
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn-red btn-modal-window">Войти</button>
+                                                        <p>Нету аккаунта? <a href="#">Создать</a></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                        <!-- modal window call back -->
+                        <div class="modal fade" id="modalWindowCallBack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <h2 class="category-goods__title modal__title">ОБРАТНАЯ СВЯЗЬ</h2>
+                                    <p>Заполните форму и наш менеджер свяжется с вами в течении рабочего дня</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <div class="modal-body">
+                                        <form>
+                                            <input type="text" placeholder="Имя *">
+                                            <input type="text" placeholder="Номер телефона *">
+                                            <input type="email" placeholder="Эл. адрес">
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-red btn-modal-window">Отправить</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart" data-toggle="modal" data-target="#modalWindowCart">
+                            <img src="icons/basket.svg" alt="cart">
+                            <div class="cart__title">
+                                <p>Товара на сумму:</p>
+                                <p><span>3 200</span> грн</p>
+                            </div>
+                        </div>
+                        <!-- modal window cart -->
+                        <div class="modal fade modal-cart" id="modalWindowCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <h2 class="category-goods__title modal__title">ТОВАРЫ В КОРЗИНЕ</h2>
+                                    <p>Авторизуйтесь , что бы сохранить товары в корзине</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <div class="modal-body">
+                                        <div class="wrap-cart">
+                                            <div class="wrap-cart__img">
+                                                <img src="img/img-cart.jpg" alt="">
+                                            </div>
+                                            <div class="wrap-cart__desc">
+                                                <h6>Модульная картина портрет женщины</h6>
+                                                <span>Есть в наличии</span>
+                                            </div>
+                                            <div class="wrap-cart-price">
+                                                <p><span>13 200</span> грн</p>
+                                                <div class="style-select">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <span class="delet-cart">Удалить</span>
+                                        </div>
+                                        <div class="wrap-cart">
+                                            <div class="wrap-cart__img">
+                                                <img src="img/img-cart.jpg" alt="">
+                                            </div>
+                                            <div class="wrap-cart__desc">
+                                                <h6>Модульная картина портрет женщины</h6>
+                                                <span>Есть в наличии</span>
+                                            </div>
+                                            <div class="wrap-cart-price">
+                                                <p><span>13 200</span> грн</p>
+                                                <div class="style-select">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <span class="delet-cart">Удалить</span>
+                                        </div>
+                                        <div class="wrap-cart">
+                                            <div class="wrap-cart__img">
+                                                <img src="img/img-cart.jpg" alt="">
+                                            </div>
+                                            <div class="wrap-cart__desc">
+                                                <h6>Модульная картина портрет женщины</h6>
+                                                <span>Есть в наличии</span>
+                                            </div>
+                                            <div class="wrap-cart-price">
+                                                <p><span>13 200</span> грн</p>
+                                                <div class="style-select">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <span class="delet-cart">Удалить</span>
+                                        </div>
+                                        <div class="wrap-cart-total-price">
+                                            <div class="total-price">
+                                                <p>ИТОГО:</p>
+                                                <p><span>13 200</span> грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-border-red btn-modal-window">Продолжить покупки</button>
+                                        <button type="button" class="btn-red btn-modal-window">Оформить заказ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="menu-btn">
+                        <span></span>
+                    </div>
+                    <nav class="menu">
+                        <ul class="top-menu d-flex">
+                            <li><a href="#">ГЛАВНАЯ</a></li>
+                            <li><a href="#">О НАС</a></li>
+                            <li class="menu-dropdown"><a href="#">НАКЛЕЙКИ ИНТЕРЬЕРНЫ</a>
+                                <div class="wrapper-sub-menu">
+                                    <div class="d-flex">
+                                        <div class="wrapper-snb-menu__items">
+                                            <img src="img/img-menu.jpg" alt="">
+                                            <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
+                                            <ul>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapper-snb-menu__items">
+                                            <img src="img/img-menu-2.jpg" alt="">
+                                            <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
+                                            <ul>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapper-snb-menu__items">
+                                            <img src="img/img-menu.jpg" alt="">
+                                            <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
+                                            <ul>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapper-snb-menu__items">
+                                            <img src="img/img-menu-2.jpg" alt="">
+                                            <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
+                                            <ul>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="menu-dropdown"><a href="#">МОДУЛЬНЫЕ КАРТИНЫ</a></li>
+                            <li class="menu-dropdown"><a href="#">ФОТООБОИ</a></li>
+                            <li><a href="#">ОТЗЫВЫ</a></li>
+                            <li><a href="#">КОНТАК</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="catalog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="link-page">
+                        <a href="#">Stickers PrintColor</a>
+                        <span>- Модульные картины</span>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <aside>
+                        <div class="btn-filter">
+                            <button type="button" class="btn-red"><i class="fa fa-filter" aria-hidden="true"></i> фильтр</button>
+                        </div>
+                        <div class="filter">
+                        <div class="wrapper-filter">
+                            <h3 class="wrapper-filter__title">МОДУЛЬНЫЕ КАРТИНЫ</h3>
+                            <div class="filter-categories">
+                                <span>Ваше фото на холсте</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                    <li><a href="#">Полный рост</a></li>
+                                    <li><a href="#">Семейное фото</a></li>
+                                    <li><a href="#">Портрет</a></li>
+                                    <li><a href="#">Полный рост</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Подарочная карта</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                    <li><a href="#">Полный рост</a></li>
+                                    <li><a href="#">Семейное фото</a></li>
+                                    <li><a href="#">Портрет</a></li>
+                                    <li><a href="#">Полный рост</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Репродукции</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                    <li><a href="#">Полный рост</a></li>
+                                    <li><a href="#">Семейное фото</a></li>
+                                    <li><a href="#">Портрет</a></li>
+                                    <li><a href="#">Полный рост</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Мультипанно из Ваших фото</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wrapper-filter">
+                            <h3 class="wrapper-filter__title">ТЕМА И СТИЛЬ</h3>
+                            <div class="filter-categories">
+                                <span>Абстракция</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Архитетура</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Астрономия</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Гороскоп</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Животные</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Карты</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Литература</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Мода</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wrapper-filter">
+                            <h3 class="wrapper-filter__title">КОЛЛЕКЦИИ</h3>
+                            <div class="filter-categories">
+                                <span>Для гостинной комнаты</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Для ванной комнаты</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Для детской комнаты</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>Для спальни</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>В ванную комнату</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>В античном стиле</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>В египетском стиле</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                            <div class="filter-categories">
+                                <span>В японском стиле</span>
+                                <ul class="filter-categories__items">
+                                    <li><a href="#">Портрет</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="col-12 col-md-8 col-lg-9">
+                    <div class="catalog-desc">
+                        <div class="catalog-desc__img">
+                            <img src="img/img-catalog/img-catalog.jpg" alt="">
+                        </div>
+                        <div class="catalog-desc__text">
+                            <h3 class="catalog-desc__text-title">ПОРТРЕТ НА КАРТИНЕ</h3>
+                            <p>Что такое модульные картины ... Модульные картины,
+                                    которые еще называют сегментированными, состоят
+                                    из нескольких частей, объединенных общей тематикой.</p>
+                                    <p>Элементы крепятся на стене на некотором расстоянии
+                                            друг от друга и не обрамляются привычными рамами
+                                            или багетом, а сюжет картины продолжается.</p>
+                                            <p>Модульные картины – лучший выбор для тех, кто хочет
+                                                    создать уникальный и современный интерьер
+                                                    своими руками</p>
+                        </div>
+                    </div>
+                    <div class="group-select d-flex justify-content-between">
+                        <div class="style-select">
+                            <select name="" id="">
+                                <option value="">Сортировать по</option>
+                                <option value="">...</option>
+                            </select>
+                        </div>
+                        <div class="style-select">
+                            <select name="" id="">
+                                <option value="">Показывать по</option>
+                                <option value="">...</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-1.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                    <div class="sale-discount btn-red">15%</div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-2.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-3.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-1.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-2.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-3.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-1.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-2.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-3.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-1.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-2.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-6 col-lg-4">
+                            <div class="wrap-card-good">
+                                <a href="#" class="cards-good">
+                                    <img src="img/img-catalog/img-good-3.jpg" alt="">
+                                    <div class="cards-good__desc">
+                                        <h5>Картина “Черный мак”</h5>
+                                        <div class="pricing">
+                                            <p class="discount">17000</p>
+                                            <p><span class="price">13 200</span> грн</p>
+                                            <span class="stock">Есть в наличии</span>
+                                        </div>
+                                    </div>
+                                    <div class="cards-good-hide-block">
+                                        <p>Отлично подходят для спальни либо вашей гостинной комнаты</p>
+                                        <button type="button" class="btn-red btn-cards-good">Подробнее</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="col-12">
+                                <nav>
+                                    <ul class="pagination">
+                                          <li>
+                                            <a href="#" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                                          </li>
+                                          <li><a href="#" class="active">1</a></li>
+                                          <li><a href="#">2</a></li>
+                                          <li><a href="#">3</a></li>
+                                          <li><a href="#" class="empty">...</a></li>
+                                          <li><a href="#">5</a></li>
+                                          <li>
+                                            <a href="#" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                                          </li>
+                                    </ul>
+                                </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-10 ml-auto mr-auto">
+                    <h2 class="why-we__title">ПОЧЕМУ ИМЕННО МЫ?</h2>
+                    <p class="why-we__desc">Фотообои — обои с нанесённым на них изображением. Состоят из частей (количество частей зависит
+                        от размера). Изображение наносится при помощи широкоформатных принтеров (плоттер) или офсетной печати. При печати
+                        на широкоформатных принтерах используются различные чернила: Сольвент, Экосольвент, Латекс, УФ. Все виды имеют
+                        свои преимущества. Критерии, по которым они могут расходиться: стойкость чернил на материале, яркость цветов
+                        и, самое главное, экологичность. Фотообои являются одним из видов цифровых обоев</p>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-lg-4">
+                    <a href="#" class="logo">
+                        <img src="img/Logo.png" alt="">
+                        <p><span>stickers</span><br>printcolor</p>
+                    </a>
+                    <ul class="footer-link">
+                        <li><a href="#">Кратко о компании для СЕО</a></li>
+                        <li><a href="#">Кратко о компании для СЕО</a></li>
+                        <li><a href="#">Кратко о компании для СЕО</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-2 col-lg-2">
+                    <div class="footer-menu">
+                        <h4>КОМПАНИЯ</h4>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Магазины</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-lg-3">
+                    <div class="footer-menu">
+                        <h4>ДЛЯ ПОКУПАТЕЛЕЙ</h4>
+                        <ul>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Самовывоз</a></li>
+                            <li><a href="#">Техподдержка</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-lg-3">
+                    <div class="footer-contacts">
+                        <h4>КОНТАКТЫ</h4>
+                        <ul>
+                            <li>г. Одесса, ул. Деребасовская 4А</li>
+                            <li>м. Университет, ТЦ “ГУМ”</li>
+                            <li><a href="tel: (095) 892-21-21">38(095) 892-21-21</a></li>
+                            <li><a href="tel: (066) 900-00-21">38 (066) 900-00-21</a></li>
+                            <li>пн.-сб. 09:00-17:00, вс. - 11:00-15:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="footer-confidentiality">
+                        <span>Разработано студией</span>
+                        <span>(с) Stickers PrintColor. Все права защищены</span>
+                        <div class="footer-icons d-flex">
+                            <img src="icons/vk.svg" alt="">
+                            <img src="icons/facebook-logo.svg" alt="">
+                            <img src="icons/odnoklassniki.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main-js.js"></script>
+</body>
+
+</html>

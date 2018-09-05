@@ -990,6 +990,42 @@ a:hover{
 .catalog .why-we__desc{
     padding-bottom: 60px;
 }
+/*catalog-2*/
+.catalog-desc{
+    padding: 25px 0;
+    border-bottom: 1px solid #e0e3e8;
+    margin-bottom: 25px;
+    display: flex;
+}
+.catalog-desc .catalog-desc__img,
+.catalog-desc .catalog-desc__text{
+    width: 50%;
+}
+.catalog-desc .catalog-desc__img img{
+    width: 100%;
+}
+.catalog-desc .catalog-desc__text{
+    padding-left: 25px;
+}
+.catalog-desc .catalog-desc__text .catalog-desc__text-title{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 25px;
+}
+.catalog-desc .catalog-desc__text .catalog-desc__text-title::after{
+    content: '';
+    border-bottom: 2px solid #1c1b1b;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+}
+.catalog-desc .catalog-desc__text p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
 
 
 @media only screen and (max-width: 1200px) {
@@ -1035,6 +1071,17 @@ a:hover{
     .cards-good .cards-good-hide-block p {
         font-size: 12px;
         padding: 0 10px;
+    }
+    .catalog-desc .catalog-desc__text .catalog-desc__text-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        position: relative;
+        margin-top: 15px;
+    }
+    .catalog-desc .catalog-desc__text p {
+        font-size: 12px;
+        padding-bottom: 8px;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -1144,6 +1191,25 @@ a:hover{
     .pagination {
         justify-content: flex-start;
     }
+    .catalog-desc .catalog-desc__text {
+        padding-left: 15px;
+    }
+    .catalog-desc .catalog-desc__text .catalog-desc__text-title {
+        font-size: 18px;
+        margin-top: 0;
+    }
+    .catalog-desc .catalog-desc__text .catalog-desc__text-title::after {
+        content: '';
+        border-bottom: 2px solid #1c1b1b;
+        width: 15px;
+        position: absolute;
+        top: 50%;
+        margin-left: 10px;
+    }
+    .catalog-desc .catalog-desc__text p {
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1175,6 +1241,10 @@ a:hover{
     }
     .modal-cart .modal-dialog {
         max-width: 700px;
+    }
+    .catalog-desc .catalog-desc__text p {
+        font-size: 12px;
+        padding-bottom: 8px;
     }
     
 }
@@ -1247,6 +1317,10 @@ a:hover{
         padding: 6px 0 6px 5px;
     }
     .cards-good .pricing {
+        padding-bottom: 5px;
+    }
+    .catalog-desc .catalog-desc__text p {
+        font-size: 11px;
         padding-bottom: 5px;
     }
 }
@@ -1412,6 +1486,25 @@ a:hover{
     }
     .btn-filter .btn-red {
         width: 40%;
+    }
+    .catalog-desc {
+        display: flex;
+        flex-flow: column;
+    }
+    .catalog-desc .catalog-desc__img {
+        width: 80%;
+        margin: auto;
+    }
+    .catalog-desc .catalog-desc__text{
+        width: 100%;
+    }
+    .catalog-desc .catalog-desc__text p {
+        font-size: 13px;
+        padding-bottom: 8px;
+    }
+    .catalog-desc .catalog-desc__text .catalog-desc__text-title {
+        font-size: 20px;
+        margin-top: 20px;
     }
 }
 
