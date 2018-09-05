@@ -1184,6 +1184,35 @@ a:hover{
     padding-bottom: 15px;
 }
 
+/*page 404*/
+.errore{
+    width: 55%;
+    margin: 40px auto 60px;
+    text-align: center;
+}
+.errore .errore__img{
+    width: 100%;
+}
+.errore .errore__img img{
+    width: 100%;
+}
+.errore .why-we__title {
+    font-size: 24px;
+    margin: 20px auto;
+    width: 300px;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+}
+.errore .btn-red{
+    width: 170px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
 @media only screen and (max-width: 1200px) {
     .logo img {
         margin-right: 10px;
@@ -1412,6 +1441,9 @@ a:hover{
         font-size: 12px;
         padding-bottom: 15px;
     }
+    .errore {
+        width: 65%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1577,6 +1609,20 @@ a:hover{
         padding-right: 0;
         order: 2;
     }
+    .errore {
+        width: 75%;
+    }
+    .errore {
+        width: 80%;
+    }
+    .errore .errore__img{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .errore p{
+        font-size: 13px;
+    }
+
 }
 @media only screen and (max-width: 576px) {
     .header::after, .header::before{
@@ -1825,6 +1871,24 @@ a:hover{
         width: 65%;
         margin: 0 auto 15px;
     }
+    .errore .why-we__title {
+        font-size: 20px;
+        margin: 20px auto;
+        width: 245px;
+        text-align: center;
+        position: relative;
+        font-weight: 600;
+    }
+    .errore {
+        width: 90%;
+    }
+    .errore p{
+        font-size: 12px;
+    }
+    .errore .errore__img {
+        width: 85%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -1844,6 +1908,9 @@ a:hover{
         width: 50%;
         margin: 20px auto 0;
     }
+    .errore {
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 430px) {
     .why-we__cards {
@@ -1862,6 +1929,22 @@ a:hover{
         position: absolute;
         top: 50%;
         margin-left: 10px;
+    }
+    .errore .why-we__title {
+        font-size: 18px;
+    }
+    .errore .why-we__title::after{
+        right: -20px;
+    }
+    .errore .why-we__title::before{
+        left: -20px;
+    }
+    .errore .why-we__title::after, .errore .why-we__title::before {
+        content: '';
+        border-bottom: 1px solid #1c1b1b;
+        width: 15px;
+        position: absolute;
+        top: 50%;
     }
 }
 @media only screen and (max-width: 375px) {
