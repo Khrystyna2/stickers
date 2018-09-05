@@ -990,7 +990,7 @@ a:hover{
 .catalog .why-we__desc{
     padding-bottom: 60px;
 }
-/*catalog-2*/
+/*page catalog-2*/
 .catalog-desc{
     padding: 25px 0;
     border-bottom: 1px solid #e0e3e8;
@@ -1027,6 +1027,79 @@ a:hover{
     padding-bottom: 10px;
 }
 
+/*page blog*/
+.title-blog{
+    padding: 38px 0 10px;
+    border-bottom: 1px solid #828282;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 30px; 
+}
+.blog-block{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e0e3e8;
+}
+.blog-block:last-of-type{
+    padding-bottom: 0;
+    border: none;
+}
+.blog-desc{
+    display: flex;
+    align-items: center;
+}
+.blog-desc .blog-desc__img{
+    width: 40%;
+}
+.blog-desc .blog-desc__img img{
+    width: 100%;
+}
+.blog-desc .blog-desc__text{
+    padding-left: 25px;
+    width: 60%;
+}
+.blog-desc .blog-desc__text .blog-desc__title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 22px;
+    position: relative;
+}
+.blog-desc .blog-desc__text .blog-desc__title::after{
+    content: '';
+    border-bottom: 2px solid #1c1b1b;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+}
+.blog-desc .blog-desc__text p{
+    font-size: 14px;
+    padding-bottom: 10px;
+    line-height: 20px;
+}
+.blog-desc .blog-btn{
+    width: 170px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    display: block;
+    margin-top: 15px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.blog-desc .blog-btn:hover{
+    text-decoration: none;
+    color: #fff;
+}
+.blog .pagination{
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
 
 @media only screen and (max-width: 1200px) {
     .logo img {
@@ -1082,6 +1155,13 @@ a:hover{
     .catalog-desc .catalog-desc__text p {
         font-size: 12px;
         padding-bottom: 8px;
+    }
+    .blog-desc .blog-desc__text .blog-desc__title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    .blog-desc .blog-desc__text p {
+        font-size: 13px;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -1210,6 +1290,22 @@ a:hover{
         font-size: 11px;
         padding-bottom: 5px;
     }
+    .blog-desc .blog-desc__text p {
+        font-size: 12px;
+        padding-bottom: 8px;
+        line-height: 16px;
+    }
+    .blog-desc .blog-desc__text .blog-desc__title {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .blog-desc .blog-desc__img {
+        width: 50%;
+    }
+    .blog-desc .blog-desc__text {
+        padding-left: 15px;
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1323,6 +1419,35 @@ a:hover{
         font-size: 11px;
         padding-bottom: 5px;
     }
+    .login a, .cart p {
+        display: none;
+    }
+    .login, .cart {
+        width: auto;
+        margin: 0 15px;
+    }
+    .top-wrap {
+        padding-top: 6px;
+        justify-content: flex-end;
+    }
+    .cart .counter {
+        left: 55%;
+    }
+    .blog-desc .blog-btn {
+        width: 55%;
+        height: 35px;
+        text-align: center;
+        line-height: 35px;
+        display: block;
+        margin-top: 10px;
+    }
+    .blog-desc .blog-desc__text p{
+        font-size: 10px;
+    }
+    .blog-desc .blog-desc__text .blog-desc__title {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
 }
 @media only screen and (max-width: 576px) {
     .header::after, .header::before{
@@ -1330,6 +1455,17 @@ a:hover{
     }
     .login a, .cart p{
         display: none;
+    }
+    .login, .cart {
+        width: auto;
+        margin: 0 10px;
+    }
+    .top-wrap {
+        padding-top: 6px;
+        justify-content: flex-end;
+    }
+    .cart .counter {
+        left: 55%;
     }
     /*button menu*/
     .menu-btn{
@@ -1505,6 +1641,26 @@ a:hover{
     .catalog-desc .catalog-desc__text .catalog-desc__text-title {
         font-size: 20px;
         margin-top: 20px;
+    }
+    .blog-desc{
+        flex-flow: column;
+    }
+    .blog-desc .blog-desc__img {
+        width: 80%;
+        margin-bottom: 25px;
+    }
+    .blog-desc .blog-desc__text {
+        padding-left: 0;
+        width: 95%;
+    }
+    .blog-desc .blog-desc__text p {
+        font-size: 13px;
+        padding-bottom: 8px;
+        line-height: 18px;
+    }
+    .blog-desc .blog-desc__text .blog-desc__title {
+        font-size: 22px;
+        margin-bottom: 12px;
     }
 }
 
