@@ -1,21 +1,21 @@
 $(document).ready(function() {
 
-  // if ($(window).width() > 1024) {
-  //   $('.menu-dropdown').hover(function () {
-  //     $(this).find('.wrapper-sub-menu').stop(true, true).fadeIn(200);
-  //   }, function () {
-  //     $('.wrapper-sub-menu').fadeOut(200);
-  //   });
-  // }
-  // if ($(window).width() <= 1024) {
-  //   $('.menu-dropdown').click(function () {
-  //     $(this).find('.wrapper-sub-menu').slideToggle(400);
-  //   });
-  // }
-
+  if ($(window).width() > 1024) {
+    $('.menu-dropdown').hover(function () {
+      $(this).find('.wrapper-sub-menu').stop(true, true).fadeIn(200);
+    }, function () {
+      $('.wrapper-sub-menu').fadeOut(200);
+    });
+  }
+  if ($(window).width() <= 1024) {
     $('.menu-dropdown').click(function () {
       $(this).find('.wrapper-sub-menu').slideToggle(400);
     });
+  }
+
+    // $('.menu-dropdown').click(function () {
+    //   $(this).find('.wrapper-sub-menu').slideToggle(400);
+    // });
 
 
     
