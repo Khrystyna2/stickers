@@ -122,11 +122,18 @@ $(document).ready(function() {
       });
 
 
-      $('.wrap-card-good').hover(function (event) {
-        $(this).find('.cards-good-hide-block').stop(true, true).slideDown();
-      }, function () {
-        $(this).find('.cards-good-hide-block').slideUp();
+     
 
+      if ($(window).width() >= 1024) {
+        $('.wrap-card-good').hover(function (event) {
+          $(this).find('.cards-good-hide-block').stop(true, true).slideDown();
+        }, function () {
+          $(this).find('.cards-good-hide-block').slideUp();
+        });
+      }
+
+      $('.btn-filter').click(function() {
+        $('.filter').slideToggle(500);
       });
 
 });

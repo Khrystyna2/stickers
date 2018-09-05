@@ -786,6 +786,9 @@ a:hover{
     color: #fc4d4c;
     text-decoration: none;
 }
+.btn-filter .btn-red{
+    display: none;
+}
 
 .catalog-categories{
     padding-top: 70px;
@@ -930,6 +933,12 @@ a:hover{
     width: 100%;
     height: 50px;
     margin-top: 25px;
+}
+.cards-good .sale-discount{
+    position: absolute;
+    top: 10px;
+    padding: 3px 18px;
+    left: -12px;
 }
 
 .pagination{
@@ -1126,10 +1135,14 @@ a:hover{
     .group-select .style-select:last-of-type {
         width: 28%;
     }
-}
-@media only screen and (max-width: 991px) {
     .cards-good, .wrap-card-good {
-        height: 390px;
+        height: auto;
+    }
+    .cards-good{
+        position: static;
+    }
+    .pagination {
+        justify-content: flex-start;
     }
 }
 
@@ -1165,6 +1178,29 @@ a:hover{
     }
     
 }
+@media only screen and (max-width: 767px) {
+    .btn-filter .btn-red{
+        width: 25%;
+        height: 40px;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 20px;
+        display: block;
+    }
+    .btn-filter .btn-red i{
+        margin-right: 10px;
+    }
+    .filter{
+        display: none;
+    }
+    .catalog-categories .category-good__img .category-good__desc {
+        width: 65%;
+        font-size: 14px;
+    }
+    .pagination {
+        justify-content: center;
+    }
+}
 @media only screen and (max-width: 720px) and (min-width: 567px){
     .header::after {
         width: 0;
@@ -1179,11 +1215,7 @@ a:hover{
         font-size: 12px;
     }
     .category-good__img .category-good__desc {
-        height: 35px;
-        font-size: 10px;
-        bottom: 10px;
-        padding: 3px 5px;
-        width: 85%;
+        width: 65%;
     }
     .why-we__cards {
         width: 25%;
@@ -1197,6 +1229,25 @@ a:hover{
     }
     .footer-link, .footer-menu ul, .footer-contacts ul, .footer-confidentiality{
         font-size: 11px;
+    }
+    .cards-good .cards-good__desc h5 {
+        text-align: center;
+    }
+    .cards-good .pricing .discount {
+        font-size: 12px;
+    }
+    .cards-good .pricing .price {
+        font-size: 17px;
+    }
+    .cards-good .pricing .stock {
+        right: -10px;
+        bottom: 2px;
+        width: 46%;
+        font-size: 8px;
+        padding: 6px 0 6px 5px;
+    }
+    .cards-good .pricing {
+        padding-bottom: 5px;
     }
 }
 @media only screen and (max-width: 576px) {
@@ -1332,6 +1383,36 @@ a:hover{
     .slider-goods-mob a{
         margin: 0 14px;
     }
+    .category-good__img, .wrap-card-good {
+        width: 75%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .cards-good .cards-good__desc h5 {
+        font-size: 18px;
+    }
+    .cards-good .pricing .stock {
+        right: -10px;
+        width: 45%;
+        font-size: 12px;
+    }
+    .cards-good .pricing .price {
+        color: #fc4d4c;
+        font-weight: 700;
+        font-size: 22px;
+    }
+    .catalog .why-we__title {
+        width: 219px;
+    }
+    .style-select {
+        width: 40%;
+    }
+    .group-select .style-select:last-of-type {
+        width: 35%;
+    }
+    .btn-filter .btn-red {
+        width: 40%;
+    }
 }
 
 
@@ -1340,8 +1421,36 @@ a:hover{
         width: 47.5%;
     }
 }
+@media only screen and (max-width: 460px) {
+    .style-select {
+        width: 50%;
+    }
+    .group-select .style-select:last-of-type {
+        width: 45%;
+    }
+    .btn-filter .btn-red {
+        width: 50%;
+        margin: 20px auto 0;
+    }
+}
 @media only screen and (max-width: 430px) {
     .why-we__cards {
         width: 46.5%;
+    }
+    .category-good__img, .wrap-card-good{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .group-select{
+        flex-flow: column;
+    }
+    .style-select {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .group-select .style-select:last-of-type {
+        width: 80%;
+        margin-top: 20px;
     }
 }
