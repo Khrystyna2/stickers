@@ -1062,14 +1062,18 @@ a:hover{
     padding-left: 25px;
     width: 60%;
 }
-.blog-desc .blog-desc__text .blog-desc__title{
+.blog-desc .blog-desc__text .blog-desc__title,
+.delivery-payment .delivery-payment__text .delivery__title,
+.delivery-payment .delivery-payment__text .payment__title{
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 15px;
     line-height: 22px;
     position: relative;
 }
-.blog-desc .blog-desc__text .blog-desc__title::after{
+.blog-desc .blog-desc__text .blog-desc__title::after,
+.delivery-payment .delivery-payment__text .delivery__title::after,
+.delivery-payment .delivery-payment__text .payment__title::after{
     content: '';
     border-bottom: 2px solid #1c1b1b;
     width: 20px;
@@ -1125,6 +1129,45 @@ a:hover{
     height: auto;
     margin-left: 35px;
     display: block;
+}
+
+/*page delivery-payment*/
+.delivery-payment{
+    display: flex;
+    margin-bottom: 35px;
+}
+.delivery-payment__text, .delivery-payment__img{
+    width: 50%;
+}
+.delivery-payment__text{
+    padding-right: 30px;
+}
+.delivery-payment .delivery-payment__text .delivery__title,
+.delivery-payment .delivery-payment__text .payment__title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 22px;
+    position: relative;
+}
+.delivery-payment .delivery-payment__text .delivery__title::after,
+.delivery-payment .delivery-payment__text .payment__title::after{
+    content: '';
+    border-bottom: 2px solid #1c1b1b;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    margin-left: 20px;
+}
+.delivery-payment .delivery-payment__text .payment__title{
+    margin-top: 10px;
+}
+.delivery-payment__text p{
+    font-size: 14px;
+    padding-bottom: 15px;
+}
+.delivery-payment .delivery-payment__img img{
+    width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1343,6 +1386,17 @@ a:hover{
         height: auto;
         margin-left: 35px;
         display: block;
+    }
+    .blog-desc .blog-desc__text .blog-desc__title, .delivery-payment .delivery-payment__text .delivery__title, .delivery-payment .delivery-payment__text .payment__title {
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 15px;
+        line-height: 22px;
+        position: relative;
+    }
+    .delivery-payment__text p {
+        font-size: 12px;
+        padding-bottom: 15px;
     }
 }
 
@@ -1711,6 +1765,20 @@ a:hover{
         margin-left: 35px;
         display: block;
         margin: 20px auto;
+    }
+    .delivery-payment{
+        flex-flow: column;
+    }
+    .delivery-payment__text{
+        width: 95%;
+        padding-right: 0;
+        order: 2;
+    }
+    
+    .delivery-payment__img{
+        width: 80%;
+        order: 1;
+        margin: 0 auto;
     }
 }
 
