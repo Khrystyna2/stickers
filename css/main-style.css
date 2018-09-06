@@ -1132,6 +1132,10 @@ a:hover{
     display: flex;
     margin-bottom: 35px;
 }
+.wrap-delivery-payment{
+    display: flex;
+    margin-bottom: 35px;
+}
 .delivery-payment__text, .delivery-payment__img{
     width: 50%;
 }
@@ -1165,6 +1169,9 @@ a:hover{
 }
 /*page about-company*/
 .about-company{
+    margin-bottom: 35px;
+}
+.wrap-about-company{
     margin-bottom: 20px;
 }
 .about-company .about-company__img{
@@ -1221,6 +1228,124 @@ a:hover{
     text-decoration: none;
     color: #fff;
     /* opacity: 0.8; */
+}
+
+
+/*page card-good*/
+.img-card-good{
+    width: 100%;
+    border: 1px solid #e0e3e8;
+    padding: 40px 30px;
+    margin-bottom: 40px;
+}
+.img-card-good img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.small-img-card-good{
+    max-width: 100px;
+    height: auto;
+    margin: 15px;
+    background: #fc4d4c;
+}
+.bg-img-card-good{
+    width: 100%;
+    background: url(../img/img-slider-card-good/photo.jpg) no-repeat center center;
+}
+.small-img-card-good img{
+    max-width: 100%;
+}
+
+.slider-card-nav{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.properties-card-good .subtitle{
+    font-size: 21px;
+}
+.properties-card-good p{
+    padding-bottom: 22px;
+}
+.properties-card-good .style-select{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*style for checkbox*/
+.label-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-right: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.label-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.label-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.label-checkbox input:checked ~ .checkmark {
+    background-color: #fc4d4c;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.label-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.label-checkbox .checkmark:after {
+    left: 6px;
+    top: 1.5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.properties-card-good .pricing .discount{
+    padding: 0;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+.properties-card-good .pricing p{
+    font-weight: 600;
+    font-size: 20px;
+}
+.properties-card-good .pricing .price{
+    color: #fc4d4c;
+    font-size: 25px;
+    font-weight: 700;
+}
+.properties-card-good .btn-red{
+    width: 100%;
+    height: 45px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1514,7 +1639,7 @@ a:hover{
     .pagination {
         justify-content: center;
     }
-    .about-company{
+    .wrap-about-company{
         flex-flow: column;
     }
     .about-company .about-company__text {
@@ -1606,7 +1731,7 @@ a:hover{
         font-size: 17px;
         margin-bottom: 8px;
     }
-    .delivery-payment {
+    .wrap-delivery-payment {
         flex-flow: column;
     }
     .delivery-payment__img {
@@ -1859,7 +1984,7 @@ a:hover{
         display: block;
         margin: 20px auto;
     }
-    .delivery-payment{
+    .wrap-delivery-payment{
         flex-flow: column;
     }
     .delivery-payment__text{
