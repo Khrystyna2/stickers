@@ -40,87 +40,13 @@
                 </div>
                 <div class="col-6 col-sm-4 col-lg-5 order-1">
                     <div class="top-wrap d-flex">
-                        <div class="login" data-toggle="modal" data-target="#modalWindowExit">
+                        <div class="login">
                             <img src="icons/user.svg" alt="user">
                             <div class="login__title">
                                 <p>Личный кабинет</p>
                                 <a href="#">Войти</a>
                             </div>
                         </div>
-                        <!-- modal window exit -->
-                        <div class="modal fade" id="modalWindowExit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <h2 class="category-goods__title modal__title">ВХОД В ЛИЧНЫЙ КАБИНЕТ</h2>
-                                    <p>Что бы войти в личный кабинет, пожалуйста, введите свои данные</p>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <div class="modal-body">
-                                        <form>
-                                            <input type="email" placeholder="Эл. адрес *">
-                                            <input type="password" placeholder="Пароль *">
-                                            <input type="password" placeholder="Повторите пароль *">
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn-red btn-modal-window">Войти</button>
-                                        <p>Нету аккаунта? <a href="#">Создать</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- modal window register -->
-                        <!-- <div class="modal fade" id="modalWindowRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <h2 class="category-goods__title modal__title">СОЗДАНИЕ АККАУНТА</h2>
-                                                    <p>Заполните форму, что бы создать аккаунт</p>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                        <input type="email" placeholder="Эл. адрес *">
-                                                        <input type="text">
-                                                        <input type="text">
-                                                        <input type="text">
-                                                        <input type="text">
-                                                        <input type="password" placeholder="Пароль *">
-                                                        <input type="password" placeholder="Повторите пароль *">
-                                                        <img src="img/robot.jpg" alt="">
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn-red btn-modal-window">Войти</button>
-                                                        <p>Нету аккаунта? <a href="#">Создать</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                        <!-- modal window call back -->
-                        <div class="modal fade" id="modalWindowCallBack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <h2 class="category-goods__title modal__title">ОБРАТНАЯ СВЯЗЬ</h2>
-                                    <p>Заполните форму и наш менеджер свяжется с вами в течении рабочего дня</p>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <div class="modal-body">
-                                        <form>
-                                            <input type="text" placeholder="Имя *">
-                                            <input type="text" placeholder="Номер телефона *">
-                                            <input type="email" placeholder="Эл. адрес">
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn-red btn-modal-window">Отправить</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="cart" data-toggle="modal" data-target="#modalWindowCart">
                             <img src="icons/basket.svg" alt="cart">
                             <div class="cart__title">
@@ -233,7 +159,7 @@
                             <li><a href="#">О НАС</a></li>
                             <li class="menu-dropdown"><a href="#">НАКЛЕЙКИ ИНТЕРЬЕРНЫ</a>
                                 <div class="wrapper-sub-menu">
-                                    <div class="d-flex">
+                                    <div class="block-sub-menu d-flex">
                                         <div class="wrapper-snb-menu__items">
                                             <img src="img/img-menu.jpg" alt="">
                                             <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
@@ -328,6 +254,10 @@
                                     <p>Модульные картины – лучший выбор для тех, кто хочет создать уникальный и современный
                                         интерьер своими руками</p>
                                     <a href="page-blog.html" class="blog-btn btn-red">Читать статью</a>
+                                    <div class="date">
+                                        <img src="icons/clock-circular-outline.svg" alt="">
+                                        <span>04.09.2018</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -345,6 +275,10 @@
                                     <p>Модульные картины – лучший выбор для тех, кто хочет создать уникальный и современный
                                         интерьер своими руками</p>
                                     <a href="#" class="blog-btn btn-red">Читать статью</a>
+                                    <div class="date">
+                                            <img src="icons/clock-circular-outline.svg" alt="">
+                                            <span>04.09.2018</span>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -362,6 +296,10 @@
                                     <p>Модульные картины – лучший выбор для тех, кто хочет создать уникальный и современный
                                         интерьер своими руками</p>
                                     <a href="#" class="blog-btn btn-red">Читать статью</a>
+                                    <div class="date">
+                                            <img src="icons/clock-circular-outline.svg" alt="">
+                                            <span>04.09.2018</span>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -379,6 +317,10 @@
                                     <p>Модульные картины – лучший выбор для тех, кто хочет создать уникальный и современный
                                         интерьер своими руками</p>
                                     <a href="#" class="blog-btn btn-red">Читать статью</a>
+                                    <div class="date">
+                                            <img src="icons/clock-circular-outline.svg" alt="">
+                                            <span>04.09.2018</span>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -396,6 +338,10 @@
                                     <p>Модульные картины – лучший выбор для тех, кто хочет создать уникальный и современный
                                         интерьер своими руками</p>
                                     <a href="#" class="blog-btn btn-red">Читать статью</a>
+                                    <div class="date">
+                                            <img src="icons/clock-circular-outline.svg" alt="">
+                                            <span>04.09.2018</span>
+                                        </div>
                                 </div>
                             </div>
                         </div>
@@ -414,6 +360,20 @@
                                 </li>
                             </ul>
                         </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                            <h3 class="title-blog">ПРОЧИТАННЫЕ СТАТЬИ</h3>
+                            <div class="slider-blog">
+                                <a href="#" class="slider-blog-block">
+                                    <img src="img/img-blog/blog-img.jpg" alt="">
+                                    <div class="slider-blog__desc">
+                                        <h5>НАЗВАНИЕ</h5>
+                                        <p>Просмотрено: <span>04.09.2018</span></p>
+                                    </div>
+                                </a>
+                            </div>
                     </div>
                 </div>
             </div>

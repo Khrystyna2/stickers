@@ -1079,7 +1079,7 @@ a:hover{
 }
 .blog-desc .blog-desc__text{
     padding-left: 25px;
-    width: 60%;
+    width: 60%;position: relative;
 }
 .blog-desc .blog-desc__text .blog-desc__title{
     font-size: 24px;
@@ -1122,6 +1122,18 @@ a:hover{
     margin-top: 40px;
     margin-bottom: 60px;
     justify-content: center;
+}
+.date {
+    font-size: 13px;
+    color: #c6c6c6;
+    position: absolute;
+    right: 15px;
+    bottom: 14px;
+}
+.date img{
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
 }
 
 /*page page-blog*/
@@ -1185,6 +1197,24 @@ a:hover{
 }
 .delivery-payment .delivery-payment__img img{
     width: 100%;
+}
+.payment-cards,
+.delivery-compani{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.payment-cards li,
+.delivery-compani li {
+    margin-right: 10px;
+}
+.payment-cards li a img{
+    width: 55px;
+    height: 30px;
+}
+.delivery-compani li a img{
+    width: 115px;
+    height: 65px;
 }
 /*page about-company*/
 .about-company{

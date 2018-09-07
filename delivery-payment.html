@@ -40,87 +40,13 @@
                 </div>
                 <div class="col-6 col-sm-4 col-lg-5 order-1">
                     <div class="top-wrap d-flex">
-                        <div class="login" data-toggle="modal" data-target="#modalWindowExit">
+                        <div class="login">
                             <img src="icons/user.svg" alt="user">
                             <div class="login__title">
                                 <p>Личный кабинет</p>
                                 <a href="#">Войти</a>
                             </div>
                         </div>
-                        <!-- modal window exit -->
-                        <div class="modal fade" id="modalWindowExit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <h2 class="category-goods__title modal__title">ВХОД В ЛИЧНЫЙ КАБИНЕТ</h2>
-                                    <p>Что бы войти в личный кабинет, пожалуйста, введите свои данные</p>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <div class="modal-body">
-                                        <form>
-                                            <input type="email" placeholder="Эл. адрес *">
-                                            <input type="password" placeholder="Пароль *">
-                                            <input type="password" placeholder="Повторите пароль *">
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn-red btn-modal-window">Войти</button>
-                                        <p>Нету аккаунта? <a href="#">Создать</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- modal window register -->
-                        <!-- <div class="modal fade" id="modalWindowRegister" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <h2 class="category-goods__title modal__title">СОЗДАНИЕ АККАУНТА</h2>
-                                                    <p>Заполните форму, что бы создать аккаунт</p>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                    <div class="modal-body">
-                                                        <form>
-                                                        <input type="email" placeholder="Эл. адрес *">
-                                                        <input type="text">
-                                                        <input type="text">
-                                                        <input type="text">
-                                                        <input type="text">
-                                                        <input type="password" placeholder="Пароль *">
-                                                        <input type="password" placeholder="Повторите пароль *">
-                                                        <img src="img/robot.jpg" alt="">
-                                                        </form>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn-red btn-modal-window">Войти</button>
-                                                        <p>Нету аккаунта? <a href="#">Создать</a></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-                        <!-- modal window call back -->
-                        <div class="modal fade" id="modalWindowCallBack" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div class="modal-dialog" role="document">
-                                <div class="modal-content">
-                                    <h2 class="category-goods__title modal__title">ОБРАТНАЯ СВЯЗЬ</h2>
-                                    <p>Заполните форму и наш менеджер свяжется с вами в течении рабочего дня</p>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <div class="modal-body">
-                                        <form>
-                                            <input type="text" placeholder="Имя *">
-                                            <input type="text" placeholder="Номер телефона *">
-                                            <input type="email" placeholder="Эл. адрес">
-                                        </form>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn-red btn-modal-window">Отправить</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="cart" data-toggle="modal" data-target="#modalWindowCart">
                             <img src="icons/basket.svg" alt="cart">
                             <div class="cart__title">
@@ -233,7 +159,7 @@
                             <li><a href="#">О НАС</a></li>
                             <li class="menu-dropdown"><a href="#">НАКЛЕЙКИ ИНТЕРЬЕРНЫ</a>
                                 <div class="wrapper-sub-menu">
-                                    <div class="d-flex">
+                                    <div class="block-sub-menu d-flex">
                                         <div class="wrapper-snb-menu__items">
                                             <img src="img/img-menu.jpg" alt="">
                                             <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
@@ -323,6 +249,12 @@
                                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
                                     ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
                                     eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <ul class="payment-cards">
+                                        <li><a href="#"><img src="img/payment-img-1.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/payment-img-2.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/payment-img-3.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/payment-img-4.jpg" alt=""></a></li>
+                                    </ul>
                                 <h3 class="payment__title subtitle">ДОСТАВКА</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -330,6 +262,10 @@
                                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed
                                     ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
                                     eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                                    <ul class="delivery-compani">
+                                        <li><a href="#"><img src="img/delivery-img-2.jpg" alt=""></a></li>
+                                        <li><a href="#"><img src="img/delivery-img-1.jpg" alt=""></a></li>
+                                    </ul>
                             </div>
                             <div class="delivery-payment__img">
                                 <img src="img/delivery-img.png" alt="">
