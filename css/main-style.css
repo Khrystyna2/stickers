@@ -1137,6 +1137,9 @@ a:hover{
 }
 
 /*page page-blog*/
+.blog{
+    padding-bottom: 60px;
+}
 .page-glog{
     padding-bottom: 60px;
 }
@@ -1156,6 +1159,33 @@ a:hover{
     height: auto;
     margin-left: 35px;
     display: block;
+}
+.slider-blog-block{
+    position: relative;
+    width: 265px;
+    display: block;
+    margin: 0 15px;
+}
+.slider-blog-block img{
+    width: 100%;
+}
+.slider-blog-block .slider-blog__desc{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(225, 225, 225, 0.6);
+    width: 100%;
+    color: #1c1b1b;
+    text-align: center;
+    font-size: 14px;
+    padding: 13px 0;
+}
+.slider-blog-block .slider-blog__desc h5{
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.slider-blog-block .slider-blog__desc p span{
+    color: #606163;
 }
 
 /*page delivery-payment*/
