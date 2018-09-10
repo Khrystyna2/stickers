@@ -137,18 +137,21 @@ a:hover{
     width: 50%;
     cursor: pointer;
     position: relative;;
+    color: #1c1b1b;
 }
 .login img,
 .cart img{
     width: 40px;
     margin-right: 15px;
 }
-.login a{
+.login span{
     color: #fc4d4c;
     border-bottom: 1px dashed;
     padding-bottom: 3px;
+    display: block;
+    width: 42px;
 }
-.login a:hover{
+.login:hover{
     text-decoration: none;
 }
 .cart p span{
@@ -1255,6 +1258,9 @@ a:hover{
 }
 .about-company .about-company__img{
     width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 }
 .about-company .about-company__img img{
     width: 100%;
@@ -1268,6 +1274,42 @@ a:hover{
 .about-company .about-company__text p{
     font-size: 14px;
     padding-bottom: 15px;
+}
+
+.social-link li a{
+    width: 36px;
+    display: block;
+    margin-right: 10px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+.social-link li a:hover{
+    opacity: 0.7;
+}
+.social-link li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+}
+.social-link li:last-of-type{
+   margin-bottom: 0;
+}
+.social-link li span{
+    font-size: 11px;
+    font-weight: 600;
+    width: 140px;
+    line-height: 30px;
+    display: block;
+    border: 1px solid #d4d7dc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    padding-left: 15px;
 }
 
 /*page 404*/
@@ -1866,6 +1908,7 @@ a:hover{
     }
     .wrap-about-company{
         flex-flow: column;
+        align-items: center;
     }
     .about-company .about-company__text {
         width: 100%;
@@ -1873,6 +1916,9 @@ a:hover{
     .about-company .about-company__img {
         width: 55%;
         margin: 0 auto 15px;
+    }
+    .social-link{
+        margin: 30px auto 20px;
     }
     .modal-content {
         padding: 40px 15px;
@@ -1933,7 +1979,7 @@ a:hover{
         font-size: 11px;
         padding-bottom: 5px;
     }
-    .login a, .cart p {
+    .login span, .cart p {
         display: none;
     }
     .login, .cart {
@@ -2019,7 +2065,7 @@ a:hover{
     .header::after, .header::before{
         width: 0;
     }
-    .login a, .cart p{
+    .login span, .cart p{
         display: none;
     }
     .login, .cart {
