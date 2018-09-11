@@ -1740,7 +1740,7 @@ a:hover{
 }
 .form-exit__title{
     margin-top: 0;
-    width: 72%;
+    width: 322px;
 }
 .form-exit p{
     width: 70%;
@@ -2094,6 +2094,12 @@ a:hover{
     .errore {
         width: 65%;
     }
+    .form-exit__title{
+        width: 270px;
+    }
+    .form-exit p {
+        width: 65%;
+    }
 }
 @media only screen and (max-width: 900px){
     .properties-card-good .subtitle {
@@ -2164,7 +2170,9 @@ a:hover{
         width: 75%;
         margin: 20px auto;
     }
-    
+    .form-exit p {
+        width: 80%;
+    }
 }
 @media only screen and (max-width: 767px) {
     .btn-filter .btn-red{
@@ -2678,6 +2686,12 @@ a:hover{
         margin: 0px 3px;
         margin-top: 20px;
     }
+    .form-exit__title{
+        width: 245px;
+    }
+    .form-exit p {
+        width: 300px;
+    }
 }
 
 
@@ -2744,6 +2758,28 @@ a:hover{
         width: 15px;
         position: absolute;
         top: 50%;
+    }
+    .form-exit {
+        padding: 38px 15px 20px 15px;
+        margin-bottom: 40px;
+    }
+    .form-exit__title {
+        width: 170px;
+    }
+    .form-exit p {
+        width: 255px;
+    }
+    .form-exit__btn::after {
+        width: calc(100% + 30px);
+        left: -15px;
+    }
+    .form-exit__btn p a {
+        color: #fc4d4c;
+        border-bottom: 1px dashed;
+        padding-bottom: 4px;
+        margin-left: 15px;
+        line-height: 30px;
+        font-size: 14px;
     }
 }
 @media only screen and (max-width: 375px) {
