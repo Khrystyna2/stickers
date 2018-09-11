@@ -121,9 +121,6 @@ $(document).ready(function() {
 
       });
 
-
-     
-
       if ($(window).width() >= 1024) {
         $('.wrap-card-good').hover(function (event) {
           $(this).find('.cards-good-hide-block').stop(true, true).slideDown();
@@ -131,33 +128,18 @@ $(document).ready(function() {
           $(this).find('.cards-good-hide-block').slideUp();
         });
       }
+      if ($(window).width() <= 1024) {
+        $('.wrap-card-good').click(function () {
+            $('.cards-good-hide-block').fadeToggle(200);
+        });
+    }
 
       $('.btn-filter').click(function() {
         $('.filter').slideToggle(500);
       });
 
 
-
-
-
-      //slider-card-good
-      // $('.slider-card').slick({
-      //   slidesToShow: 1,
-      //   slidesToScroll: 1,
-      //   arrows: false,
-      //   fade: true,
-      //   asNavFor: '.slider-card-nav'
-      // });
-      // $('.slider-card-nav').slick({
-      //   slidesToShow: 9,
-      //   slidesToScroll: 9,
-      //   asNavFor: '.slider-card',
-      //   dots: false,
-      //   // centerMode: true,
-      //   focusOnSelect: true
-      // });
-
-
+      // slider for card-good
       $('.slider-card').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -250,7 +232,6 @@ $(document).ready(function() {
 
 
       //add photo
-
       $(function() {
         var countFiles = 1,
           $body = $('body'),
@@ -311,7 +292,6 @@ $(document).ready(function() {
 
 
       //style inpyt
-
       var $inputs = $(".input-form input, .input-form textarea");
 
         $inputs.on('focus', function() {
