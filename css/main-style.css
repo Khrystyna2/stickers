@@ -518,7 +518,7 @@ a:hover{
     margin: 0 12px;
     margin-top: 20px;
 }
- /*sectio category-doods*/
+ /*section category-goods*/
 .slider-goods-mob{
     display: none;
 }
@@ -1867,6 +1867,58 @@ p.call-back-desc{
 p.thank-desc{
     width: 375px;
 }
+
+
+/*page order*/
+.order{
+    padding-bottom: 60px;
+}
+.order-form__title{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+textarea{
+    border: 1px solid #e0e3e8;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.input-form .text{
+    top: 25px;
+}
+.order-checked .checkmark{
+    top: 6px;
+}
+.order-checked .label-checkbox img{
+    width: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.order__btn{
+    width: 265px;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.description-order{
+    padding-top: 28px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.description-order p{
+    padding-bottom: 15px;
+}
+.description-order ul li{
+    padding-bottom: 5px;
+}
+.description-order ul li a{
+    color: #1c1b1b;
+    font-weight: 500;
+}
+
 @media only screen and (max-width: 1200px) {
     .logo img {
         margin-right: 10px;

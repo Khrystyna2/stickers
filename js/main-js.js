@@ -312,7 +312,7 @@ $(document).ready(function() {
 
       //style inpyt
 
-      var $inputs = $(".input-form input");
+      var $inputs = $(".input-form input, .input-form textarea");
 
         $inputs.on('focus', function() {
           var $self =  $(this);
