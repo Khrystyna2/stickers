@@ -2050,6 +2050,27 @@ textarea{
     width: 175px;
 }
 
+/*video*/
+.video-block{
+    padding: 30px 0;
+    border-bottom: 1px solid #e0e3e8;
+    display: flex;
+    align-items: center;
+}
+.video-block:last-of-type{
+    border: none;
+}
+.video-desc__text{
+    width: 60%;
+}
+.video-desc__text p{
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.video-desc__video{
+    width: 40%;
+}
+
 @media only screen and (max-width: 1200px) {
     .logo img {
         margin-right: 10px;
@@ -2391,6 +2412,9 @@ textarea{
     .form-exit p {
         width: 80%;
     }
+    .video-desc__video {
+        width: 55%;
+    }
 }
 @media only screen and (max-width: 767px) {
     .btn-filter .btn-red{
@@ -2571,15 +2595,25 @@ textarea{
         margin-top: 20px;
     }
     .history-order__price .pricing .discount{
-        font-size: 13px;
+        font-size: 12px;
     }
     .history-order__price .pricing p{
-        font-size: 16px;
+        font-size: 15px;
     }
     .history-order__price .pricing p .price{
-        font-size: 18px;
+        font-size: 17px;
     }
-
+    .video-block{
+        flex-flow: column;
+    }
+    .video-desc__text{
+        width: 90%;
+        order: 2;
+        margin-top: 20px;
+    }
+    .video-desc__video{
+        order: 1;
+    }
 }
 @media only screen and (max-width: 576px) {
     .header::after, .header::before{
@@ -2934,6 +2968,29 @@ textarea{
     .form-call-back{
         width: 100%;
     }
+    .history-order__price .pricing .discount{
+        font-size: 12px;
+    }
+    .history-order__price .pricing p{
+        font-size: 15px;
+    }
+    .history-order__price .pricing p .price{
+        font-size: 17px;
+    }
+    .video-block{
+        flex-flow: column;
+        -ms-flex-flow: column;
+    }
+    .video-desc__text{
+        width: 100%;
+        order: 2;
+        margin-top: 20px;
+    }
+    .video-desc__video{
+        order: 1;
+        width: 70%;
+    }
+
 }
 
 
@@ -3064,5 +3121,8 @@ textarea{
     }
     .history-order__price .pricing p .price{
         font-size: 16px;
+    }
+    .video-desc__video{
+        width: 90%;
     }
 }
