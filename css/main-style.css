@@ -43,6 +43,10 @@ a:hover{
     cursor: pointer;
     text-align: center;
 }
+.btn-red:hover{
+    text-decoration: none;
+    color: #fff;
+}
 .btn-border-red{
     border: 1px solid #fc4d4c;
     background: #fff;
@@ -50,6 +54,10 @@ a:hover{
     font-size: 13px;
     font-weight: 500;
     cursor: pointer;
+    text-align: center;
+}
+.btn-border-red:hover{
+    text-decoration: none;
 }
 .btn-gray{
     border: none;
@@ -61,15 +69,16 @@ a:hover{
     text-align: center;
     width: 100%;
     height: 45px;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
 }
 .btn-gray:hover{
     background: #fc4d4c;
     color: #fff;
+    text-decoration: none;
 }
 
 /*header*/
@@ -517,6 +526,7 @@ a:hover{
     width: 26%;
     margin: 0 12px;
     margin-top: 20px;
+    line-height: 45px;
 }
  /*section category-goods*/
 .slider-goods-mob{
@@ -1918,6 +1928,127 @@ textarea{
     color: #1c1b1b;
     font-weight: 500;
 }
+/*page personal-office*/
+.personal-office {
+    padding-bottom: 60px;
+}
+.personal-office .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #fc4d4c;
+    border: none;
+}
+.personal-office .nav-link {
+    display: block;
+    padding: 12px 0;
+    text-transform: none;
+    margin-right: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1c1b1b;
+    border: 1px solid #e0e3e8;
+    text-align: center;
+    border-bottom: 0;
+}
+.personal-office .btn-gray{
+    line-height: 45px;
+}
+
+.personal-info{
+    border: 1px solid #e0e3e8;
+    padding: 30px 35px;
+    width: 80%;
+}
+.personal-info h5{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.personal-info table{
+    margin: 10px 0;
+    width: 100%;
+}
+.personal-info table tr td:first-of-type{
+    width: 140px;
+}
+.personal-info table tr td{
+    padding-bottom: 10px;
+}
+.personal-info table tr td span{
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(156, 154, 154, 0.56);
+}
+.personal-info a{
+    color: #fc4d4c;
+    border-bottom: 1px dashed;
+    padding-bottom: 4px;
+    font-weight: 500;
+}
+.personal-info a:hover{
+    text-decoration: none;
+}
+.personal-office__card .news-img{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 25px;
+}
+.history-order{
+    width: 100%;
+    border: 1px solid #e0e3e8;
+    padding: 30px;
+}
+.history-order__title{
+    font-size: 14px;
+}
+.history-order__content{
+    padding-bottom: 30px;
+    padding-top: 25px;
+    border-bottom: 1px solid #e0e3e8;
+}
+.history-order__content:last-of-type{
+    border: none;
+    padding-bottom: 0;
+}
+.history-order__desc{
+    width: 70%;
+}
+.history-order__desc h6{
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(156, 154, 154, 0.56);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+.history-order__desc p{
+    padding-bottom: 5px;
+}
+.history-order__desc div{
+    width: 105px;
+    line-height: 30px;
+    background: #e0e3e8;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.history-order__price .pricing .discount{
+    font-size: 15px;
+    text-decoration: line-through;
+    font-weight: 300;
+}
+.history-order__price .pricing p{
+    font-size: 18px;
+}
+.history-order__price .pricing p .price{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fc4d4c;
+}
+.form-call-back{
+    width: 85%;
+}
+.form-call-back .btn-red{
+    width: 175px;
+}
 
 @media only screen and (max-width: 1200px) {
     .logo img {
@@ -2184,6 +2315,9 @@ textarea{
     p.thank-desc{
         width: 375px;
     }
+    .personal-info{
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 900px){
     .properties-card-good .subtitle {
@@ -2435,6 +2569,15 @@ textarea{
         width: 30%;
         margin: 0 12px;
         margin-top: 20px;
+    }
+    .history-order__price .pricing .discount{
+        font-size: 13px;
+    }
+    .history-order__price .pricing p{
+        font-size: 16px;
+    }
+    .history-order__price .pricing p .price{
+        font-size: 18px;
     }
 
 }
@@ -2785,6 +2928,12 @@ textarea{
     p.thank-desc{
         width: 90%;
     }
+    .personal-office .btn-gray{
+        margin-bottom: 20px;
+    }
+    .form-call-back{
+        width: 100%;
+    }
 }
 
 
@@ -2900,5 +3049,20 @@ textarea{
         font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 30px;
+    }
+    .personal-info {
+        padding: 20px 10px;
+    }
+    .history-order {
+        padding: 20px 10px;
+    }
+    .history-order__price .pricing .discount{
+        font-size: 11px;
+    }
+    .history-order__price .pricing p{
+        font-size: 13px;
+    }
+    .history-order__price .pricing p .price{
+        font-size: 16px;
     }
 }
