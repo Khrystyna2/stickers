@@ -1800,17 +1800,10 @@ a:hover{
 .form-exit__btn{
     align-items: center;
     padding-bottom: 40px;;
-    margin-bottom: 20px;
     position: relative;
+    margin-top: 30px;
 }
-.form-exit__btn::after{
-    content: '';
-    border-bottom: 1px solid #e0e3e8;
-    width: calc(100% + 90px);
-    position: absolute;
-    bottom: 0px;
-    left: -45px;
-}
+
 .form-exit__btn button.btn-red{
     width: 170px;
     height: 45px;
@@ -1832,6 +1825,18 @@ a:hover{
 .form-exit__btn p a:hover{
     text-decoration: none;
 }
+.form-exit__footer{
+    position: relative;
+   padding-top: 20px;
+}
+.form-exit__footer::before{
+    content: '';
+    border-bottom: 1px solid #e0e3e8;
+    width: calc(100% + 90px);
+    position: absolute;
+    top: 0px;
+    left: -45px;
+}
 .form-exit__footer .social-link{
     display: flex;
     align-items: center;
@@ -1852,7 +1857,16 @@ a:hover{
 .form-registration__title{
     width: 230px;
 }
+p.call-back-desc{
+    width: 350px;
+}
 
+.form-thank__title{
+    width: 85px;
+}
+p.thank-desc{
+    width: 375px;
+}
 @media only screen and (max-width: 1200px) {
     .logo img {
         margin-right: 10px;
@@ -2111,6 +2125,12 @@ a:hover{
     }
     .form-registration__title{
         width: 185px;
+    }
+    .form-thank__title{
+        width: 80px;
+    }
+    p.thank-desc{
+        width: 375px;
     }
 }
 @media only screen and (max-width: 900px){
@@ -2459,7 +2479,7 @@ a:hover{
         margin-top: 10px;
         margin-bottom: 0;
         width: 100%;
-        border: none;0
+        border: none;
     }
     .wrapper-sub-menu .wrapper-snb-menu__items ul li a {
         padding: 5px 0;
@@ -2707,6 +2727,12 @@ a:hover{
     .form-registration__title{
         width: 170px;
     }
+    .form-thank__title{
+        width: 70px;
+    }
+    p.thank-desc{
+        width: 90%;
+    }
 }
 
 
@@ -2784,7 +2810,7 @@ a:hover{
     .form-exit p {
         width: 255px;
     }
-    .form-exit__btn::after {
+    .form-exit__footer::before {
         width: calc(100% + 30px);
         left: -15px;
     }
@@ -2795,6 +2821,9 @@ a:hover{
         margin-left: 15px;
         line-height: 30px;
         font-size: 14px;
+    }
+    p.thank-desc{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 375px) {
