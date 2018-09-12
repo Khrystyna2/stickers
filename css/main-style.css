@@ -42,6 +42,8 @@ a:hover{
     font-weight: 500;
     cursor: pointer;
     text-align: center;
+    height: 45px;
+    width: 175px;
 }
 .btn-red:hover{
     text-decoration: none;
@@ -2273,6 +2275,26 @@ textarea{
     font-size: 14px;
 }
 
+/*page contacts*/
+.contacts{
+    padding-bottom: 60px;
+}
+.contacts .description-order{
+    width: 80%;
+}
+.contacts .description-order span{
+    margin-top: 30px;
+    font-weight: 300;
+    font-style: italic;
+    display: inline-block;
+}
+.contacts .form-call-back{
+    width: 100%;
+}
+.maps{
+    width: 100%;
+    margin-top: 60px;
+}
 @media only screen and (max-width: 1200px) {
     .logo img {
         margin-right: 10px;
@@ -3319,6 +3341,10 @@ textarea{
     }
     .reviews-block__reviews .wrapper-comment__desc p:last-of-type {
         padding-bottom: 15px;
+    }
+    .contacts .form-call-back {
+        width: 100%;
+        margin-top: 20px;
     }
 
 }
