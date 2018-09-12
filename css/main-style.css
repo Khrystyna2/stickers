@@ -1400,6 +1400,7 @@ a:hover{
     margin-bottom: 15px;
     line-height: 22px;
     position: relative;
+    text-transform: uppercase;
 }
 .subtitle::after{
     content: '';
@@ -1748,6 +1749,35 @@ a:hover{
 .selection-paintings__desc .btn-red:hover{
     text-decoration: none;
     color: #fff;
+}
+
+.properties-card-good .wrap-cart-price .style-select{
+    width: 75px;
+}
+.photo-card-goods{
+    width: 100%;
+    border: 1px solid #e0e3e8;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px; 
+}
+.photo-card-goods img{
+    width: 100%;
+}
+.bg-area{
+    width: 115px;
+    height: 58px;
+    background: #ccc;
+    padding: 10px;
+}
+.bg-area p{
+    padding: 0;
+    font-size: 12px;
+}
+.bg-area span{
+    font-size: 17px;
 }
 /*page exit*/
 .form-exit{
@@ -2386,6 +2416,15 @@ textarea{
     .wrap-cart .wrap-cart__desc p:last-child {
         width: 60%;
     }
+    .properties-card-good .pricing .discount {
+        font-size: 14px;
+    }
+    .properties-card-good .pricing .price {
+        font-size: 19px;
+    }
+    .properties-card-good .pricing p {
+        font-size: 16px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .slick-prev {
@@ -2654,10 +2693,6 @@ textarea{
         font-size: 12px;
         padding-bottom: 8px;
     }
-    .properties-card-good{
-        width: 80%;
-        margin: 20px auto;
-    }
     .selection-paintings__img {
         width: 75%;
         margin: 20px auto;
@@ -2713,6 +2748,13 @@ textarea{
     }
     .add-photo{
         margin-top: 20px;
+    }
+    .properties-card-good{
+        width: 80%;
+        margin: 20px auto;
+    }
+    .photo-card-goods {
+        margin-bottom: 20px;
     }
 }
 @media only screen and (max-width: 720px) and (min-width: 567px){
@@ -3491,5 +3533,9 @@ textarea{
     }
     .video-desc__video{
         width: 90%;
+    }
+    .properties-card-good .wrap-cart-price .style-select {
+        width: 75px;
+        margin: 0 15px;
     }
 }

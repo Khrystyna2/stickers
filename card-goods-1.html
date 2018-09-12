@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stickers</title>
+    <link rel="mask-icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="Font/stylesheetfonts.css">
+    <!-- style slick -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+    <!-- style bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="css/main-style.css">
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-sm-3 col-lg-2">
+                    <a href="#" class="logo">
+                        <img src="img/Logo.png" alt="">
+                        <p><span>stickers</span><br>printcolor</p>
+                    </a>
+                </div>
+                <div class="col-10 ml-auto col-sm-5 col-lg-5 order-2 order-sm-1">
+                    <form>
+                        <div class="input-groups">
+                            <input type="search" placeholder="Поиск по каталогу ..." class="search-input-top">
+                            <button type="submit" class="btn-search-icon"> <img src="icons/search.svg" alt="search"></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-5 order-1">
+                    <div class="top-wrap d-flex">
+                        <a href="#" class="login">
+                            <img src="icons/user.svg" alt="user">
+                            <div class="login__title">
+                                <p>Личный кабинет</p>
+                                <span>Войти</span>
+                            </div>
+                        </a>
+                        <div class="cart" data-toggle="modal" data-target="#modalWindowCart">
+                            <img src="icons/basket.svg" alt="cart">
+                            <div class="cart__title">
+                                <p>Товара на сумму:</p>
+                                <p><span>3 200</span> грн</p>
+                            </div>
+                            <div class="counter">2</div>
+                        </div>
+                        <!-- modal window cart -->
+                        <div class="modal fade modal-cart" id="modalWindowCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <h2 class="category-goods__title modal__title">ТОВАРЫ В КОРЗИНЕ</h2>
+                                    <p>Авторизуйтесь , что бы сохранить товары в корзине</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    <div class="modal-body">
+                                        <div class="wrap-cart">
+                                            <div class="wrap-cart__img">
+                                                <img src="img/img-cart.jpg" alt="">
+                                            </div>
+                                            <div class="wrap-cart__desc">
+                                                <h6>Модульная картина портрет женщины</h6>
+                                                <span>Есть в наличии</span>
+                                            </div>
+                                            <div class="wrap-cart-price">
+                                                <p><span>13 200</span> грн</p>
+                                                <div class="style-select">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <span class="delet-cart">Удалить</span>
+                                        </div>
+                                        <div class="wrap-cart">
+                                            <div class="wrap-cart__img">
+                                                <img src="img/img-cart.jpg" alt="">
+                                            </div>
+                                            <div class="wrap-cart__desc">
+                                                <h6>Модульная картина портрет женщины</h6>
+                                                <span>Есть в наличии</span>
+                                            </div>
+                                            <div class="wrap-cart-price">
+                                                <p><span>13 200</span> грн</p>
+                                                <div class="style-select">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <span class="delet-cart">Удалить</span>
+                                        </div>
+                                        <div class="wrap-cart">
+                                            <div class="wrap-cart__img">
+                                                <img src="img/img-cart.jpg" alt="">
+                                            </div>
+                                            <div class="wrap-cart__desc">
+                                                <h6>Модульная картина портрет женщины</h6>
+                                                <span>Есть в наличии</span>
+                                            </div>
+                                            <div class="wrap-cart-price">
+                                                <p><span>13 200</span> грн</p>
+                                                <div class="style-select">
+                                                    <select name="" id="">
+                                                        <option value="">1</option>
+                                                        <option value="">2</option>
+                                                        <option value="">3</option>
+                                                        <option value="">4</option>
+                                                        <option value="">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <span class="delet-cart">Удалить</span>
+                                        </div>
+                                        <div class="wrap-cart-total-price">
+                                            <div class="total-price">
+                                                <p>ИТОГО:</p>
+                                                <p><span>13 200</span> грн</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn-border-red btn-modal-window">Продолжить покупки</button>
+                                        <button type="button" class="btn-red btn-modal-window">Оформить заказ</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="menu-btn">
+                        <span></span>
+                    </div>
+                    <nav class="menu">
+                        <ul class="top-menu d-flex">
+                            <li><a href="#">ГЛАВНАЯ</a></li>
+                            <li><a href="#">О НАС</a></li>
+                            <li class="menu-dropdown"><a href="#">НАКЛЕЙКИ ИНТЕРЬЕРНЫ</a>
+                                <div class="wrapper-sub-menu">
+                                    <div class="block-sub-menu d-flex">
+                                        <div class="wrapper-snb-menu__items">
+                                            <img src="img/img-menu.jpg" alt="">
+                                            <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
+                                            <ul>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapper-snb-menu__items">
+                                            <img src="img/img-menu-2.jpg" alt="">
+                                            <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
+                                            <ul>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapper-snb-menu__items">
+                                            <img src="img/img-menu.jpg" alt="">
+                                            <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
+                                            <ul>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="wrapper-snb-menu__items">
+                                            <img src="img/img-menu-2.jpg" alt="">
+                                            <p class="wrapper-snb-menu__items_title">ФОТО НА ХОЛСТЕ</p>
+                                            <ul>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                                <li><a href="">Портрет</a></li>
+                                                <li><a href="">Полный рост</a></li>
+                                                <li><a href="">Семейное фото</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="menu-dropdown"><a href="#">МОДУЛЬНЫЕ КАРТИНЫ</a></li>
+                            <li class="menu-dropdown"><a href="#">ФОТООБОИ</a></li>
+                            <li><a href="#">ОТЗЫВЫ</a></li>
+                            <li><a href="#">КОНТАК</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="link-page">
+                            <a href="#">Stickers PrintColor</a>
+                            <a href="#">- Модульные картины</a>
+                            <a href="#">- Портрет</a>
+                            <span>- Портрет</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="card-good">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h3 class="title-page">watercolor</h3>
+                    </div>
+                    <div class="col-12 col-md-7 col-lg-8">
+                       <div class="photo-card-goods">
+                           <img src="img/img-slider-card-good/foto-2.jpg" alt="">
+                       </div>
+                    </div>
+                    <div class="col-12 col-md-5 col-lg-4">
+                        <div class="properties-card-good">
+                            <h3 class="subtitle">watercolor</h3>
+                            <p>Это недорогой и легкий способ кардинально изменить
+                                стиль помещения. Ими пещения наклейки требуется
+                                лишь отсоединить ее от листа и устроить в желаемом
+                                месте.</p>
+                            <div class="style-select">
+                                <select name="" id="">
+                                    <option value="">Выберите размер ...</option>
+                                    <option value="">200</option>
+                                </select>
+                            </div>
+                            <div class="group-chekbox d-flex">
+                                <label class="label-checkbox">Матовая
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="label-checkbox">Глянцевая
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="label-checkbox">Отзеркалить
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <p>Доставка: Одесса 5-7 дней +3000 грн</p>
+                            <div class="wrap-cart-price d-flex align-items-center">
+                                    <div class="style-select">
+                                            <select name="" id="">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                            </select>
+                                        </div>
+                                <div class="pricing">
+                                    <p class="discount">17000</p>
+                                    <p><span class="price">13 200</span> грн</p>
+                                </div>
+                            </div>
+                            <button class="btn-red">Добавить в корзину</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="pills-desc-tab" data-toggle="pill" href="#pills-desc" role="tab" aria-controls="pills-desc"
+                                    aria-selected="true">Описание ТОВАРА</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="pills-delivery-tab" data-toggle="pill" href="#pills-delivery" role="tab" aria-controls="pills-delivery"
+                                    aria-selected="false">ПУНКТЫ САМОВЫВОЗА</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-desc" role="tabpanel" aria-labelledby="pills-desc-tab">
+                                <div class="description-good">
+                                    <h4>Свойства материала:</h4>
+                                    <ul>
+                                        <li>Натуральный прочный художественный холст</li>
+                                        <li>Производство Германия</li>
+                                        <li>Матовое покрытие, яркие и насыщенные цвета изображения</li>
+                                        <li>Деревянный сосновый подрамник толщиной 2 см</li>
+                                    </ul>
+                                </div>
+                                <div class="description-good">
+                                    <h4>Натуральный холст:</h4>
+                                    <ul>
+                                        <li>Краски на нем на порядок ярче. Используется для домашнего интерьера, когда важно
+                                            качество.</li>
+                                        <li>Плотный качественный холст немецкого производства.</li>
+                                        <li>Плотность холста 390 г/м2.</li>
+                                        <li>Ярко выраженная текстура холста.</li>
+                                    </ul>
+                                </div>
+                                <div class="description-good">
+                                    <h4>В стоимость картины входит:</h4>
+                                    <ul>
+                                        <li>Обработка изображений перед печатью, выравнивание контрастности и цветового баланса
+                                            для безупречного результата.</li>
+                                        <li>Печать на немецких холстах принтерами Mimaki в разрешении 1440х720 dpi</li>
+                                        <li>Подрамник с галерейной натяжкой холста (изображение продолжается на торце, никаких
+                                            белых или черных некрасивых торцов)</li>
+                                        <li>Крепления “крокодил” установлены на каждый модуль</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-delivery" role="tabpanel" aria-labelledby="pills-delivery-tab">delivery</div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="selection-paintings">
+                            <div class="selection-paintings__img">
+                                <img src="img/img-slider-card-good/foto-1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 col-lg-4">
+                    <a href="#" class="logo">
+                        <img src="img/Logo.png" alt="">
+                        <p><span>stickers</span><br>printcolor</p>
+                    </a>
+                    <ul class="footer-link">
+                        <li><a href="#">Кратко о компании для СЕО</a></li>
+                        <li><a href="#">Кратко о компании для СЕО</a></li>
+                        <li><a href="#">Кратко о компании для СЕО</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-2 col-lg-2">
+                    <div class="footer-menu">
+                        <h4>КОМПАНИЯ</h4>
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Магазины</a></li>
+                            <li><a href="#">Блог</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-lg-3">
+                    <div class="footer-menu">
+                        <h4>ДЛЯ ПОКУПАТЕЛЕЙ</h4>
+                        <ul>
+                            <li><a href="#">Партнерам</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Самовывоз</a></li>
+                            <li><a href="#">Техподдержка</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3 col-lg-3">
+                    <div class="footer-contacts">
+                        <h4>КОНТАКТЫ</h4>
+                        <ul>
+                            <li>г. Одесса, ул. Деребасовская 4А</li>
+                            <li>м. Университет, ТЦ “ГУМ”</li>
+                            <li><a href="tel: (095) 892-21-21">38(095) 892-21-21</a></li>
+                            <li><a href="tel: (066) 900-00-21">38 (066) 900-00-21</a></li>
+                            <li>пн.-сб. 09:00-17:00, вс. - 11:00-15:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="footer-confidentiality">
+                        <span>Разработано студией</span>
+                        <span>(с) Stickers PrintColor. Все права защищены</span>
+                        <div class="footer-icons d-flex">
+                            <img src="icons/vk.svg" alt="">
+                            <img src="icons/facebook-logo.svg" alt="">
+                            <img src="icons/odnoklassniki.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main-js.js"></script>
+</body>
+
+</html>
