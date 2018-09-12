@@ -198,7 +198,7 @@ $(document).ready(function() {
       });
 
 
-      $('.slider-blog').slick({
+      $('.slider-blog, .slider-card-good').slick({
         infinite: true,
         arrows: true,
         // autoplay: true,
@@ -291,7 +291,7 @@ $(document).ready(function() {
       });
 
 
-      //style inpyt
+      //style input
       var $inputs = $(".input-form input, .input-form textarea");
 
         $inputs.on('focus', function() {
