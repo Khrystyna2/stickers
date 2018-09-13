@@ -325,6 +325,8 @@ a:hover{
 .top-slider-img .top-slider__desc .top-slider__btn:hover{
     text-decoration: none;
     background: #ff0000;
+    color: #fff;
+    opacity: 1;
 }
 
 /*modal windows*/
