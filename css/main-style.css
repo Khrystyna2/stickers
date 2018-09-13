@@ -234,6 +234,9 @@ a:hover{
     font-family: 'FontAwesome';
     padding-left: 5px;
 }
+/* .block-sub-menu{
+    justify-content: space-around;
+} */
 /*sub-menu*/
 .wrapper-sub-menu{
     position: absolute;
@@ -1651,6 +1654,20 @@ a:hover{
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+.properties-card-good .wrap-cart-price{
+    height: 55px;
+    margin-bottom: 20px;
+}
+.properties-card-good .wrap-cart-price .style-select{
+    width: 75px;
+    margin-bottom: 0;
+}
+.properties-card-good .more-info .pricing{
+    margin-left: 0;
+}
+.properties-card-good .pricing{
+    margin-left: 20px;
+}
 .properties-card-good .pricing .discount{
     padding: 0;
     font-size: 17px;
@@ -1660,16 +1677,84 @@ a:hover{
 .properties-card-good .pricing p{
     font-weight: 600;
     font-size: 20px;
+    padding-bottom: 0;
 }
 .properties-card-good .pricing .price{
     color: #fc4d4c;
     font-size: 25px;
     font-weight: 700;
 }
+.color-sticker{
+    margin-bottom: 20px;
+}
+.color-sticker p{
+    font-size: 12px;
+    color: #606163;
+    padding-bottom: 10px;
+}
+.color-sticker__color{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.color-sticker__color li{
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+/* .color-sticker__color li:nth-of-type(14n){
+    margin-right: 0;
+} */
+.color-sticker__color li label{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    margin-bottom: 0;
+}
+.color-sticker__color input[type="radio"]{
+    display: none;
+}
+.color-sticker__color li input:checked + label{
+    box-shadow: 2px 2px 2px #606163;
+}
 .properties-card-good .btn-red{
     width: 100%;
     height: 45px;
     margin-bottom: 20px;
+}
+.slider-card-goods{
+    margin: -50px 46px 80px 46px;
+}
+.slider-card-goods__img{
+    width: 180px;
+    height: 105px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+.slider-card-goods__img img{
+   width: 100%;
+   height: 135px;
+}
+.slider-card-goods .slick-prev, .slider-card-goods .slick-next {
+    width: 40px;
+    height: 105px;
+}
+.slider-card-goods .slick-prev:before {
+    top: 43px;
+}
+.slider-card-goods .slick-next:before {
+    top: 43px;
+}
+.slider-card-goods .slick-prev:hover, 
+.slider-card-goods .slick-next:hover {
+    background: #fc4d4c;
+}
+.slider-card-goods .slick-prev:hover::before, 
+.slider-card-goods .slick-next:hover::before {
+    color: #fff;
 }
 .description-good{
     margin-top: 30px;
@@ -1749,10 +1834,6 @@ a:hover{
 .selection-paintings__desc .btn-red:hover{
     text-decoration: none;
     color: #fff;
-}
-
-.properties-card-good .wrap-cart-price .style-select{
-    width: 75px;
 }
 .photo-card-goods{
     width: 100%;
@@ -2425,6 +2506,20 @@ textarea{
     .properties-card-good .pricing p {
         font-size: 16px;
     }
+    .bg-area {
+        width: 100px;
+        height: 50px;
+        padding: 5px;
+    }
+    .bg-area span {
+        font-size: 15px;
+    }
+    .slider-card-goods .slick-prev {
+        left: -45px;
+    }
+    .slider-card-goods .slick-next {
+        right: -45px;
+    }
 }
 @media only screen and (max-width: 1024px) {
     .slick-prev {
@@ -2658,6 +2753,13 @@ textarea{
         padding: 40px 50px;
         font-size: 13px;
     }
+    .label-checkbox {
+        margin-right: 20px;
+        font-size: 11px;
+    }
+    .checkmark {
+        top: 0px;
+    }
 }
 @media only screen and (max-width: 768px) {
     .top-menu {
@@ -2755,6 +2857,9 @@ textarea{
     }
     .photo-card-goods {
         margin-bottom: 20px;
+    }
+    .slider-card-goods {
+        margin: 0 46px 30px 46px;
     }
 }
 @media only screen and (max-width: 720px) and (min-width: 567px){
@@ -2937,6 +3042,10 @@ textarea{
         position: absolute;
         bottom: 18%;
         right: 25px;
+    }
+    .slider-card-goods .slick-prev, .slider-card-goods .slick-next {
+        width: 30px;
+        height: 105px;
     }
 }
 @media only screen and (max-width: 576px) {
@@ -3536,6 +3645,12 @@ textarea{
     }
     .properties-card-good .wrap-cart-price .style-select {
         width: 75px;
-        margin: 0 15px;
+        margin: 0;
+    }
+    .label-checkbox {
+        font-size: 10px;
+    }
+    .properties-card-good .pricing .price {
+        font-size: 17px;
     }
 }
