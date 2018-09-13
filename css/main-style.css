@@ -817,6 +817,9 @@ a:hover{
 }
 
 /*catalog page*/
+.catalog{
+    padding-bottom: 60px;
+}
 .wrapper-filter{
     margin-top: 28px;
     border-bottom: 1px solid #e0e3e8;
@@ -1999,7 +2002,8 @@ a:hover{
     height: 60px;
 }
 .form-registration__title{
-    width: 230px;
+    width: 270px;
+    text-transform: uppercase;
 }
 p.call-back-desc{
     width: 350px;
@@ -2711,7 +2715,7 @@ textarea{
         width: 65%;
     }
     .form-registration__title{
-        width: 185px;
+        width: 215px;
     }
     .form-thank__title{
         width: 80px;
@@ -3402,7 +3406,7 @@ textarea{
         width: 300px;
     }
     .form-registration__title{
-        width: 170px;
+        width: 190px;
     }
     .form-thank__title{
         width: 70px;
