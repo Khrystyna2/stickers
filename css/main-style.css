@@ -513,6 +513,8 @@ a:hover{
     background: #fafafa;
     width: 100%;
     padding: 30px 0;
+    display: flex;
+    justify-content: flex-end;
 }
 .modal-cart .modal-content .wrap-cart-total-price .total-price{
     display: flex;
@@ -3673,5 +3675,12 @@ textarea{
     }
     .properties-card-good .pricing .price {
         font-size: 17px;
+    }
+    .modal-cart .modal-content .modal-footer {
+        justify-content: flex-end;
+        flex-flow: column;
+    }
+    .modal-cart .modal-content .modal-footer .btn-modal-window {
+        width: 80%;
     }
 }
