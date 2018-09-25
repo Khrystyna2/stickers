@@ -276,6 +276,9 @@ a:hover{
 .wrapper-sub-menu .wrapper-snb-menu__items ul li a::after{
     content: '';
 }
+.top-slider{
+    overflow: hidden;
+}
 
 .top-slider-img{
     width: 100%;
