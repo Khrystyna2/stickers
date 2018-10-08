@@ -588,26 +588,45 @@ a:hover{
     -moz-transition: 0.4s ease;
     -ms-transition: 0.4s ease;
     -o-transition: 0.4s ease;
+    display: block;
 }
-.category-good__img:hover{
-   opacity: 0.5;
-}
+/* .category-good__img:hover{
+   opacity: 1;
+} */
 .category-good__img img{
     width: 100%;
 }
-.category-good__img .category-good__desc{
+.category-good__desc{
     position: absolute;
-    bottom: 18px;
-    left: -10px;
-    height: 60px;
-    width: 60%;
-    background: #fc4d4c;
-    color: #fff;
+    bottom: 0;
+    left: 0;
+    height: 33px;
+    width: 100%;
+    background: #fafafa;
+    opacity: 0.85;
+    color: #1c1b1b;
     padding: 8px 10px;
     font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.4s ease;
+    -webkit-transition: 0.4s ease;
+    -moz-transition: 0.4s ease;
+    -ms-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+}
+
+.category-good__img:hover .category-good__desc {
+    height: 65px;
+    opacity: 1;
+}
+
+.category-good__img:hover .category-good__desc p:first-child {
+    color: #fc4d4c;
 }
 .category-good__img .category-good__desc p:first-child{
     font-weight: 500;
+    padding-bottom: 5px;
 }
 
 /*section comments*/
@@ -884,7 +903,7 @@ a:hover{
 }
 .catalog-categories .category-good__img .category-good__desc{
     height: auto;
-    width: 75%;
+    width: 100%;
     font-weight: 500;
 }
 .group-select{
@@ -2457,7 +2476,7 @@ textarea{
         left: 19%;
     }
     .category-good__img .category-good__desc {
-        width: 70%;
+        width: 100%;
     }
     .slick-next {
         right: -30px;
@@ -2466,7 +2485,8 @@ textarea{
         left: -30px;
     }
     .catalog-categories .category-good__img .category-good__desc {
-        width: 80%;
+        width: 100%;
+        height: auto;
     }
     .cards-good .cards-good__desc {
         padding: 15px 10px;
@@ -2602,8 +2622,16 @@ textarea{
         width: 220px;
     }
     .category-good__img .category-good__desc {
-        height: 50px;
-        font-size: 11px;
+        height: 32px;
+        font-size: 13px;
+    }
+
+    .category-good__img:hover .category-good__desc {
+        height: 65px;
+        opacity: 1;
+    }
+    .catalog-categories .category-good__img .category-good__desc{
+        height: auto;
     }
     .slick-prev {
         left: -9px;
@@ -2848,9 +2876,11 @@ textarea{
         display: none;
     }
     .catalog-categories .category-good__img .category-good__desc {
-        width: 65%;
+        width: 100%;
         font-size: 14px;
+        height: auto;
     }
+
     .pagination {
         justify-content: center;
     }
@@ -2902,7 +2932,7 @@ textarea{
         font-size: 12px;
     }
     .category-good__img .category-good__desc {
-        width: 65%;
+        width: 100%;
     }
     .why-we__cards {
         width: 25%;
