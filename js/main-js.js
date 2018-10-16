@@ -333,7 +333,7 @@ $(document).ready(function() {
         $('.slider-card-goods').slick({
           infinite: true,
           arrows: true,
-          // autoplay: true,
+          autoplay: true,
           slidesToShow: 3,
           slidesToScroll: 1,
           responsive: [
@@ -367,4 +367,35 @@ $(document).ready(function() {
               }
             ]
         });
+
+
+        // $('.photo-card-goods>div').each(function(i) {
+        //   $(this).attr('data-img', 'img'+i)
+        // });
+
+        // $('.slick-track>div').each(function(i) {
+        //   $(this).attr('data-img', 'img'+i)
+        // });
+
+        // $('.slider-card-goods__img').on('click', function() { 
+          
+        //   let dataImage = $(this).data('img');
+        //   let getImage = $(this).closest('.group-slider');
+
+        //   getImage.find('.slider-card-goods__img').removeClass('show');
+        //   $(this).addClass('show');
+
+        //   getImage.find('.photo-card-goods>div').removeClass('show');
+        //   getImage.find('.photo-card-goods>div[data-img='+dataImage+']').addClass('show');
+
+        // });
+
+
+        $('.slider-card-goods__img').click(function() { 
+            let cloneImage = $(this).children().clone();
+            $('#big-img img').detach();
+            $('#big-img').append(cloneImage).addClass('show');
+        });
+
+        
 });

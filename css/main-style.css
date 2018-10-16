@@ -1879,7 +1879,7 @@ a:hover{
     text-decoration: none;
     color: #fff;
 }
-.photo-card-goods{
+/* .photo-card-goods{
     width: 100%;
     border: 1px solid #e0e3e8;
     padding: 25px;
@@ -1890,7 +1890,7 @@ a:hover{
 }
 .photo-card-goods img{
     width: 100%;
-}
+} */
 .bg-area{
     width: 115px;
     height: 58px;
